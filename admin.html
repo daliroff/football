@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel — FIFA Jahon Chempionati 2026</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body { background: #07080f; }
+
+    .admin-header {
+      background: linear-gradient(135deg,#1a0a2e,#2d1060,#1a0a2e);
+      border-bottom: 2px solid #9c27b0;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 20px rgba(156,39,176,0.3);
+    }
+    .admin-title {
+      font-size: 1.2rem;
+      font-weight: 800;
+      background: linear-gradient(90deg,#fff,#ce93d8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .admin-subtitle { font-size: 0.78rem; color: #ce93d8; margin-top: 2px; }
+
+    #admin-main { max-width: 1200px; margin: 0 auto; padding: 24px 16px; }
+
+    /* Setup card */
+    .setup-card {
+      background: var(--card);
+      border: 1px solid #9c27b0;
+      border-radius: var(--radius);
+      padding: 28px;
+      margin-bottom: 24px;
+    }
+    .setup-card h2 { font-size: 1.05rem; margin-bottom: 6px; color: #ce93d8; }
+    .setup-card .hint { font-size: 0.78rem; color: var(--text2); margin-bottom: 20px; line-height: 1.6; }
+    .setup-card .hint a { color: #ce93d8; }
+    .setup-card .hint code {
+      background: var(--bg3);
+      padding: 1px 6px;
+      border-radius: 3px;
+      font-size: 0.85em;
+    }
+
+    .setup-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr auto;
+      gap: 12px;
+      align-items: end;
+    }
+    @media(max-width:700px){ .setup-row { grid-template-columns: 1fr; } }
+
+    .form-group { margin-bottom: 0; }
+    .form-group label { display:block; font-size:0.72rem; color:var(--text2); margin-bottom:6px; font-weight:600; text-transform:uppercase; letter-spacing:0.5px; }
+    .form-group input {
+      width:100%;
+      background:var(--bg3);
+      border:1px solid var(--border);
+      border-radius:6px;
+      color:var(--text);
+      padding:10px 12px;
+      font-size:0.88rem;
+      outline:none;
+      transition:border-color 0.2s;
+    }
+    .form-group input:focus { border-color:#9c27b0; }
+
+    .status-bar {
+      margin-top: 14px;
+      padding: 10px 14px;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      display: none;
+    }
+    .status-bar.ok    { background:rgba(0,200,83,0.15); border:1px solid var(--green); color:var(--green); display:block; }
+    .status-bar.err   { background:rgba(244,67,54,0.15); border:1px solid #f44336; color:#f44336; display:block; }
+    .status-bar.warn  { background:rgba(255,152,0,0.15); border:1px solid #ff9800; color:#ff9800; display:block; }
+
+    /* Buttons */
+    .btn {
+      display:inline-flex; align-items:center; gap:6px;
+      padding:10px 18px; border:none; border-radius:6px;
+      font-size:0.82rem; font-weight:700; cursor:pointer;
+      transition:all 0.2s; text-transform:uppercase; letter-spacing:0.5px; white-space:nowrap;
+    }
+    .btn-primary { background:#9c27b0; color:#fff; }
+    .btn-primary:hover { background:#7b1fa2; }
+    .btn-green { background:var(--green); color:#000; }
+    .btn-green:hover { background:var(--green2); }
+    .btn-sm { padding:5px 12px; font-size:0.73rem; }
+    .btn-outline { background:transparent; border:1px solid var(--border); color:var(--text2); }
+    .btn-outline:hover { border-color:var(--green); color:var(--green); }
+    .btn-gold { background:var(--gold); color:#000; }
+    .btn-gold:hover { filter:brightness(0.9); }
+    .btn:disabled { opacity:0.4; cursor:not-allowed; }
+
+    /* Admin tabs */
+    .admin-tabs { display:flex; gap:4px; margin-bottom:24px; border-bottom:1px solid var(--border); flex-wrap:wrap; }
+    .admin-tab {
+      padding:10px 18px; border:none; background:none; color:var(--text2);
+      font-size:0.85rem; font-weight:600; cursor:pointer;
+      border-bottom:2px solid transparent; transition:all 0.2s; margin-bottom:-1px;
+    }
+    .admin-tab:hover { color:#ce93d8; }
+    .admin-tab.active { color:#ce93d8; border-bottom-color:#9c27b0; }
+
+    .admin-panel { display:none; }
+    .admin-panel.active { display:block; }
+
+    /* Group admin */
+    .group-admin-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
+      gap:18px;
+    }
+    .group-admin-card {
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      overflow:hidden;
+    }
+    .group-admin-header {
+      background:linear-gradient(90deg,#1a0a2e,#2d1060);
+      padding:10px 14px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      border-bottom:1px solid #9c27b0;
+    }
+    .group-admin-label { font-weight:800; color:#ce93d8; }
+
+    .match-editor {
+      display:flex; align-items:center; gap:8px;
+      padding:7px 12px; border-bottom:1px solid rgba(46,50,96,0.4);
+      font-size:0.78rem;
+    }
+    .match-editor:last-child { border-bottom:none; }
+    .match-editor .teams { flex:1; color:var(--text2); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .score-input {
+      width:42px; background:var(--bg3); border:1px solid var(--border);
+      border-radius:4px; color:var(--text); padding:4px 5px;
+      font-size:0.85rem; font-weight:800; text-align:center; outline:none;
+    }
+    .score-input:focus { border-color:#9c27b0; }
+    .score-sep { color:var(--text3); font-size:0.7rem; }
+
+    /* Knockout admin */
+    .round-section { margin-bottom:28px; }
+    .round-title { font-size:1rem; font-weight:800; color:#ce93d8; margin-bottom:12px; padding-bottom:8px; border-bottom:1px solid #9c27b0; }
+    .knockout-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(380px,1fr)); gap:12px; }
+    .knockout-editor { background:var(--card); border:1px solid var(--border); border-radius:8px; padding:12px 14px; display:flex; flex-direction:column; gap:8px; }
+    .knockout-editor-row { display:flex; align-items:center; gap:8px; }
+    .team-input {
+      flex:1; background:var(--bg3); border:1px solid var(--border);
+      border-radius:4px; color:var(--text); padding:5px 8px; font-size:0.78rem; outline:none;
+    }
+    .team-input:focus { border-color:#9c27b0; }
+
+    /* Save bar */
+    .save-bar {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: #1a0a2e;
+      border-top: 2px solid #9c27b0;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      z-index: 200;
+      transform: translateY(100%);
+      transition: transform 0.3s;
+    }
+    .save-bar.visible { transform: translateY(0); }
+    .save-bar-text { font-size: 0.82rem; color: #ce93d8; }
+    .save-bar-btns { display: flex; gap: 10px; }
+
+    /* Toast */
+    #toast {
+      position:fixed; bottom:80px; right:24px;
+      background:var(--green); color:#000;
+      padding:12px 20px; border-radius:8px;
+      font-weight:700; font-size:0.85rem;
+      transform:translateY(100px); opacity:0;
+      transition:all 0.3s; z-index:9999;
+    }
+    #toast.show { transform:translateY(0); opacity:1; }
+    #toast.error { background:#f44336; color:#fff; }
+    #toast.warn  { background:#ff9800; color:#000; }
+
+    /* Settings */
+    .settings-card { background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:22px; max-width:520px; margin-bottom:18px; }
+    .settings-card h3 { margin-bottom:14px; font-size:0.95rem; color:#ce93d8; }
+
+    /* Guide steps */
+    .guide-steps { counter-reset:step; margin:12px 0; }
+    .guide-step {
+      counter-increment:step;
+      padding:8px 0 8px 36px;
+      position:relative;
+      font-size:0.82rem;
+      color:var(--text2);
+      border-bottom:1px solid rgba(46,50,96,0.3);
+    }
+    .guide-step:last-child { border-bottom:none; }
+    .guide-step::before {
+      content:counter(step);
+      position:absolute; left:0;
+      width:24px; height:24px;
+      background:#9c27b0; color:#fff;
+      border-radius:50%;
+      display:flex; align-items:center; justify-content:center;
+      font-size:0.72rem; font-weight:800;
+    }
+    .guide-step code { background:var(--bg3); padding:1px 5px; border-radius:3px; font-size:0.9em; }
+    .guide-step a { color:#ce93d8; }
+  </style>
+</head>
+<body>
+
+<div class="admin-header">
+  <div>
+    <div class="admin-title">🔐 Admin Panel — FIFA Jahon Chempionati 2026</div>
+    <div class="admin-subtitle" id="conn-status">GitHub bilan ulanmagan</div>
+  </div>
+  <div style="display:flex;gap:10px">
+    <a href="index.html" class="btn btn-outline btn-sm">⚽ Saytga qaytish</a>
+  </div>
+</div>
+
+<div id="admin-main">
+
+  <!-- GitHub ulanish kartasi -->
+  <div class="setup-card">
+    <h2>🔗 GitHub bilan ulanish</h2>
+    <div class="hint">
+      Ma'lumotlar <code>data.json</code> faylida saqlanadi. Saqlash tugmasini bosganingizda bu fayl
+      GitHub'ga avtomatik commit qilinadi va sayt yangilanadi.
+      Token olish: <a href="https://github.com/settings/tokens/new" target="_blank">github.com/settings/tokens</a>
+      → <code>Contents: Read & write</code> huquqini bering.
+    </div>
+    <div class="setup-row">
+      <div class="form-group">
+        <label>GitHub Token</label>
+        <input type="password" id="gh-token" placeholder="ghp_xxxxxxxxxxxx" autocomplete="off">
+      </div>
+      <div class="form-group">
+        <label>Repo (egasi/nomi)</label>
+        <input type="text" id="gh-repo" value="daliroff/football">
+      </div>
+      <div class="form-group">
+        <label>Branch (GitHub Pages)</label>
+        <input type="text" id="gh-branch" value="main">
+      </div>
+      <button class="btn btn-primary" onclick="connectGitHub()">Ulash</button>
+    </div>
+    <div id="conn-bar" class="status-bar"></div>
+  </div>
+
+  <!-- Setup guide -->
+  <div class="setup-card" style="border-color:var(--border);">
+    <h2>📋 GitHub Pages Sozlash Yo'riqnomasi</h2>
+    <div class="guide-steps">
+      <div class="guide-step">
+        <a href="https://github.com/daliroff/football" target="_blank">github.com/daliroff/football</a> repoga kiring
+      </div>
+      <div class="guide-step">
+        <strong>Settings → Pages</strong> bo'limiga o'ting
+      </div>
+      <div class="guide-step">
+        Source: <code>Deploy from a branch</code> tanlang,
+        Branch: <code>main</code>, Folder: <code>/ (root)</code> → <strong>Save</strong>
+      </div>
+      <div class="guide-step">
+        1-2 daqiqadan so'ng sayt <code>daliroff.github.io/football</code> da ishlaydi
+      </div>
+      <div class="guide-step">
+        Quyidagi Admin panelda natijalarni kiriting → GitHub'ga saqlang → Sayt avtomatik yangilanadi
+      </div>
+    </div>
+  </div>
+
+  <!-- Asosiy admin bo'limlar -->
+  <div id="admin-content" style="display:none">
+    <div class="admin-tabs">
+      <button class="admin-tab active" onclick="switchPanel('groups',this)">⚽ Guruhlar</button>
+      <button class="admin-tab" onclick="switchPanel('knockout',this)">🏆 Knockout</button>
+    </div>
+
+    <div id="panel-groups" class="admin-panel active">
+      <div id="group-admin-grid" class="group-admin-grid"></div>
+    </div>
+
+    <div id="panel-knockout" class="admin-panel">
+      <div id="knockout-admin"></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Saqlash pastki paneli -->
+<div class="save-bar" id="save-bar">
+  <div class="save-bar-text" id="save-bar-text">O'zgartirishlar saqlanmagan</div>
+  <div class="save-bar-btns">
+    <button class="btn btn-outline btn-sm" onclick="discardChanges()">Bekor qilish</button>
+    <button class="btn btn-gold" onclick="saveToGitHub()">💾 GitHub'ga Saqlash</button>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<script src="js/admin.js"></script>
+</body>
+</html>
