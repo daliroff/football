@@ -267,25 +267,25 @@
         {
           "name": "Morocco",
           "flag": "🇲🇦",
-          "played": 2,
+          "played": 1,
           "won": 0,
           "drawn": 1,
-          "lost": 1,
+          "lost": 0,
           "gf": 1,
-          "ga": 2,
-          "gd": -1,
+          "ga": 1,
+          "gd": 0,
           "pts": 1
         },
         {
           "name": "Haiti",
           "flag": "🇭🇹",
-          "played": 0,
+          "played": 1,
           "won": 0,
           "drawn": 0,
-          "lost": 0,
+          "lost": 1,
           "gf": 0,
-          "ga": 0,
-          "gd": 0,
+          "ga": 1,
+          "gd": -1,
           "pts": 0
         }
       ],
@@ -303,12 +303,12 @@
         {
           "home": "Scotland",
           "away": "Haiti",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 1,
+          "awayScore": 0,
           "date": "2026-06-13",
           "time": "21:00",
           "venue": "Hard Rock Stadium",
-          "played": false
+          "played": true
         },
         {
           "home": "Brazil",
@@ -323,12 +323,12 @@
         {
           "home": "Morocco",
           "away": "Scotland",
-          "homeScore": 0,
-          "awayScore": 1,
+          "homeScore": null,
+          "awayScore": null,
           "date": "2026-06-19",
           "time": "18:00",
           "venue": "Arrowhead Stadium",
-          "played": true
+          "played": false
         },
         {
           "home": "Brazil",
