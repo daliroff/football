@@ -13,6 +13,44 @@ let DATA    = null;   // joriy tournament ma'lumotlari
 let FILE_SHA = null;  // GitHub dagi data.json ning SHA (update uchun kerak)
 let DIRTY   = false;  // o'zgartirishlar bor-yo'qligi
 
+/* ─── Branch avtomatik topish ───────────────────────────────────────────────── */
+async function detectBranch() {
+  const token = document.getElementById('gh-token').value.trim();
+  const repo  = document.getElementById('gh-repo').value.trim();
+  if (!token || !repo) {
+    showBar('err', 'Token va repo nomini kiriting');
+    return;
+  }
+
+  showBar('warn', 'Branchlar tekshirilmoqda…');
+
+  try {
+    // Repo info — default branch ni olish
+    const repoRes = await fetch(`https://api.github.com/repos/${repo}`, {
+      headers: { 'Authorization': `token ${token}`, 'Accept': 'application/vnd.github.v3+json' }
+    });
+    if (!repoRes.ok) throw new Error(`Repo topilmadi: HTTP ${repoRes.status}`);
+    const repoInfo = await repoRes.json();
+    const defaultBranch = repoInfo.default_branch || 'main';
+
+    // Barcha branchlarni olish
+    const brRes = await fetch(`https://api.github.com/repos/${repo}/branches`, {
+      headers: { 'Authorization': `token ${token}`, 'Accept': 'application/vnd.github.v3+json' }
+    });
+    const branches = brRes.ok ? (await brRes.json()).map(b => b.name) : [defaultBranch];
+
+    document.getElementById('gh-branch').value = defaultBranch;
+    localStorage.setItem('gh_branch', defaultBranch);
+    GH.branch = defaultBranch;
+
+    showBar('ok',
+      `✓ Default branch: "${defaultBranch}" — Mavjud branchlar: ${branches.join(', ')}`
+    );
+  } catch (e) {
+    showBar('err', 'Xato: ' + e.message);
+  }
+}
+
 /* ─── GitHub ulanish ────────────────────────────────────────────────────────── */
 async function connectGitHub() {
   const token  = document.getElementById('gh-token').value.trim();
@@ -49,7 +87,14 @@ async function fetchDataFromGitHub() {
 
   if (!res.ok) {
     const j = await res.json().catch(() => ({}));
-    throw new Error(j.message || `HTTP ${res.status}`);
+    let msg = j.message || `HTTP ${res.status}`;
+    if (msg.includes('No commit found for the ref') || res.status === 404) {
+      msg = `Branch "${GH.branch}" topilmadi yoki bo'sh.\n`
+          + `Yechim: "🔍 Branch topish" tugmasini bosing.`;
+    }
+    if (res.status === 401) msg = 'Token noto\'g\'ri yoki muddati o\'tgan.';
+    if (res.status === 403) msg = 'Token da "Contents: write" huquqi yo\'q.';
+    throw new Error(msg);
   }
 
   const fileInfo = await res.json();
@@ -86,7 +131,16 @@ async function saveToGitHub() {
 
     if (!res.ok) {
       const j = await res.json().catch(() => ({}));
-      throw new Error(j.message || `HTTP ${res.status}`);
+      let msg = j.message || `HTTP ${res.status}`;
+      if (msg.includes('No commit found for the ref')) {
+        msg = `Branch "${GH.branch}" da hali commit yo'q.\n`
+            + `"🔍 Branch topish" tugmasini bosing yoki to'g'ri branch nomini kiriting.`;
+      }
+      if (res.status === 409) {
+        msg = 'Fayl o\'zgardi (conflict). Qayta ulanib ko\'ring.';
+        FILE_SHA = null;
+      }
+      throw new Error(msg);
     }
 
     const result = await res.json();
