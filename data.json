@@ -11,18 +11,6 @@
       "id": "A",
       "teams": [
         {
-          "name": "Mexico",
-          "flag": "🇲🇽",
-          "played": 1,
-          "won": 1,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 2,
-          "ga": 0,
-          "gd": 2,
-          "pts": 3
-        },
-        {
           "name": "South Korea",
           "flag": "🇰🇷",
           "played": 1,
@@ -35,6 +23,30 @@
           "pts": 3
         },
         {
+          "name": "Mexico",
+          "flag": "🇲🇽",
+          "played": 1,
+          "won": 0,
+          "drawn": 1,
+          "lost": 0,
+          "gf": 1,
+          "ga": 1,
+          "gd": 0,
+          "pts": 1
+        },
+        {
+          "name": "South Africa",
+          "flag": "🇿🇦",
+          "played": 1,
+          "won": 0,
+          "drawn": 1,
+          "lost": 0,
+          "gf": 1,
+          "ga": 1,
+          "gd": 0,
+          "pts": 1
+        },
+        {
           "name": "Czech Republic",
           "flag": "🇨🇿",
           "played": 1,
@@ -45,26 +57,14 @@
           "ga": 2,
           "gd": -1,
           "pts": 0
-        },
-        {
-          "name": "South Africa",
-          "flag": "🇿🇦",
-          "played": 1,
-          "won": 0,
-          "drawn": 0,
-          "lost": 1,
-          "gf": 0,
-          "ga": 2,
-          "gd": -2,
-          "pts": 0
         }
       ],
       "matches": [
         {
           "home": "Mexico",
           "away": "South Africa",
-          "homeScore": 2,
-          "awayScore": 0,
+          "homeScore": 1,
+          "awayScore": 1,
           "date": "2026-06-11",
           "time": "18:00",
           "venue": "Estadio Azteca",
