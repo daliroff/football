@@ -138,6 +138,18 @@
           "pts": 0
         },
         {
+          "name": "Honduras",
+          "flag": "🇭🇳",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0
+        },
+        {
           "name": "Nigeria",
           "flag": "🇳🇬",
           "played": 0,
@@ -152,18 +164,6 @@
         {
           "name": "South Korea",
           "flag": "🇰🇷",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "Honduras",
-          "flag": "🇭🇳",
           "played": 0,
           "won": 0,
           "drawn": 0,
@@ -241,6 +241,18 @@
       "id": "C",
       "teams": [
         {
+          "name": "Australia",
+          "flag": "🇦🇺",
+          "played": 1,
+          "won": 1,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 1,
+          "ga": 0,
+          "gd": 1,
+          "pts": 3
+        },
+        {
           "name": "France",
           "flag": "🇫🇷",
           "played": 0,
@@ -265,27 +277,15 @@
           "pts": 0
         },
         {
-          "name": "Australia",
-          "flag": "🇦🇺",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
           "name": "Panama",
           "flag": "🇵🇦",
-          "played": 0,
+          "played": 1,
           "won": 0,
           "drawn": 0,
-          "lost": 0,
+          "lost": 1,
           "gf": 0,
-          "ga": 0,
-          "gd": 0,
+          "ga": 1,
+          "gd": -1,
           "pts": 0
         }
       ],
@@ -303,12 +303,12 @@
         {
           "home": "Australia",
           "away": "Panama",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 1,
+          "awayScore": 0,
           "date": "2026-06-11",
           "time": "18:00",
           "venue": "Rose Bowl",
-          "played": false
+          "played": true
         },
         {
           "home": "France",
@@ -358,18 +358,18 @@
         {
           "name": "England",
           "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-          "played": 0,
-          "won": 0,
+          "played": 1,
+          "won": 1,
           "drawn": 0,
           "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
+          "gf": 4,
+          "ga": 2,
+          "gd": 2,
+          "pts": 3
         },
         {
-          "name": "Senegal",
-          "flag": "🇸🇳",
+          "name": "El Salvador",
+          "flag": "🇸🇻",
           "played": 0,
           "won": 0,
           "drawn": 0,
@@ -392,15 +392,15 @@
           "pts": 0
         },
         {
-          "name": "El Salvador",
-          "flag": "🇸🇻",
-          "played": 0,
+          "name": "Senegal",
+          "flag": "🇸🇳",
+          "played": 1,
           "won": 0,
           "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
+          "lost": 1,
+          "gf": 2,
+          "ga": 4,
+          "gd": -2,
           "pts": 0
         }
       ],
@@ -408,12 +408,12 @@
         {
           "home": "England",
           "away": "Senegal",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 4,
+          "awayScore": 2,
           "date": "2026-06-12",
           "time": "15:00",
           "venue": "MetLife Stadium",
-          "played": false
+          "played": true
         },
         {
           "home": "Iran",
@@ -471,30 +471,6 @@
       "id": "E",
       "teams": [
         {
-          "name": "Spain",
-          "flag": "🇪🇸",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "USA",
-          "flag": "🇺🇸",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
           "name": "Ghana",
           "flag": "🇬🇭",
           "played": 0,
@@ -509,6 +485,30 @@
         {
           "name": "New Zealand",
           "flag": "🇳🇿",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0
+        },
+        {
+          "name": "Spain",
+          "flag": "🇪🇸",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0
+        },
+        {
+          "name": "USA",
+          "flag": "🇺🇸",
           "played": 0,
           "won": 0,
           "drawn": 0,
@@ -586,18 +586,6 @@
       "id": "F",
       "teams": [
         {
-          "name": "Germany",
-          "flag": "🇩🇪",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
           "name": "Canada",
           "flag": "🇨🇦",
           "played": 0,
@@ -610,8 +598,8 @@
           "pts": 0
         },
         {
-          "name": "Tunisia",
-          "flag": "🇹🇳",
+          "name": "Germany",
+          "flag": "🇩🇪",
           "played": 0,
           "won": 0,
           "drawn": 0,
@@ -624,6 +612,18 @@
         {
           "name": "Iraq",
           "flag": "🇮🇶",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0
+        },
+        {
+          "name": "Tunisia",
+          "flag": "🇹🇳",
           "played": 0,
           "won": 0,
           "drawn": 0,
@@ -701,20 +701,20 @@
       "id": "G",
       "teams": [
         {
-          "name": "Portugal",
-          "flag": "🇵🇹",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
           "name": "Colombia",
           "flag": "🇨🇴",
+          "played": 1,
+          "won": 1,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 3,
+          "ga": 1,
+          "gd": 2,
+          "pts": 3
+        },
+        {
+          "name": "Jamaica",
+          "flag": "🇯🇲",
           "played": 0,
           "won": 0,
           "drawn": 0,
@@ -737,15 +737,15 @@
           "pts": 0
         },
         {
-          "name": "Jamaica",
-          "flag": "🇯🇲",
-          "played": 0,
+          "name": "Portugal",
+          "flag": "🇵🇹",
+          "played": 1,
           "won": 0,
           "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
+          "lost": 1,
+          "gf": 1,
+          "ga": 3,
+          "gd": -2,
           "pts": 0
         }
       ],
@@ -753,12 +753,12 @@
         {
           "home": "Portugal",
           "away": "Colombia",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 1,
+          "awayScore": 3,
           "date": "2026-06-15",
           "time": "21:00",
           "venue": "MetLife Stadium",
-          "played": false
+          "played": true
         },
         {
           "home": "Saudi Arabia",
@@ -816,18 +816,6 @@
       "id": "H",
       "teams": [
         {
-          "name": "Netherlands",
-          "flag": "🇳🇱",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
           "name": "Ecuador",
           "flag": "🇪🇨",
           "played": 0,
@@ -842,6 +830,18 @@
         {
           "name": "Egypt",
           "flag": "🇪🇬",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0
+        },
+        {
+          "name": "Netherlands",
+          "flag": "🇳🇱",
           "played": 0,
           "won": 0,
           "drawn": 0,
@@ -943,8 +943,8 @@
           "pts": 0
         },
         {
-          "name": "Uruguay",
-          "flag": "🇺🇾",
+          "name": "Indonesia",
+          "flag": "🇮🇩",
           "played": 0,
           "won": 0,
           "drawn": 0,
@@ -967,8 +967,8 @@
           "pts": 0
         },
         {
-          "name": "Indonesia",
-          "flag": "🇮🇩",
+          "name": "Uruguay",
+          "flag": "🇺🇾",
           "played": 0,
           "won": 0,
           "drawn": 0,
@@ -1046,6 +1046,18 @@
       "id": "J",
       "teams": [
         {
+          "name": "Austria",
+          "flag": "🇦🇹",
+          "played": 1,
+          "won": 1,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 3,
+          "ga": 1,
+          "gd": 2,
+          "pts": 3
+        },
+        {
           "name": "Italy",
           "flag": "🇮🇹",
           "played": 0,
@@ -1070,27 +1082,15 @@
           "pts": 0
         },
         {
-          "name": "Austria",
-          "flag": "🇦🇹",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
           "name": "Venezuela",
           "flag": "🇻🇪",
-          "played": 0,
+          "played": 1,
           "won": 0,
           "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
+          "lost": 1,
+          "gf": 1,
+          "ga": 3,
+          "gd": -2,
           "pts": 0
         }
       ],
@@ -1108,12 +1108,12 @@
         {
           "home": "Austria",
           "away": "Venezuela",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 3,
+          "awayScore": 1,
           "date": "2026-06-13",
           "time": "21:00",
           "venue": "Rose Bowl",
-          "played": false
+          "played": true
         },
         {
           "home": "Italy",
@@ -1276,8 +1276,8 @@
       "id": "L",
       "teams": [
         {
-          "name": "Turkey",
-          "flag": "🇹🇷",
+          "name": "Cameroon",
+          "flag": "🇨🇲",
           "played": 0,
           "won": 0,
           "drawn": 0,
@@ -1312,8 +1312,8 @@
           "pts": 0
         },
         {
-          "name": "Cameroon",
-          "flag": "🇨🇲",
+          "name": "Turkey",
+          "flag": "🇹🇷",
           "played": 0,
           "won": 0,
           "drawn": 0,
