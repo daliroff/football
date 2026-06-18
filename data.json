@@ -10,1752 +10,246 @@
     {
       "id": "A",
       "teams": [
-        {
-          "name": "Algeria",
-          "flag": "🇩🇿",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "Brazil",
-          "flag": "🇧🇷",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "Costa Rica",
-          "flag": "🇨🇷",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "Japan",
-          "flag": "🇯🇵",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        }
+        {"name": "Mexico", "flag": "🇲🇽", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "South Africa", "flag": "🇿🇦", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "South Korea", "flag": "🇰🇷", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Czech Republic", "flag": "🇨🇿", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0}
       ],
       "matches": [
-        {
-          "home": "Brazil",
-          "away": "Algeria",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-12",
-          "time": "18:00",
-          "venue": "MetLife Stadium",
-          "played": false
-        },
-        {
-          "home": "Japan",
-          "away": "Costa Rica",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-12",
-          "time": "21:00",
-          "venue": "Rose Bowl",
-          "played": false
-        },
-        {
-          "home": "Brazil",
-          "away": "Japan",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-17",
-          "time": "18:00",
-          "venue": "AT&T Stadium",
-          "played": false
-        },
-        {
-          "home": "Algeria",
-          "away": "Costa Rica",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-17",
-          "time": "21:00",
-          "venue": "NRG Stadium",
-          "played": false
-        },
-        {
-          "home": "Brazil",
-          "away": "Costa Rica",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-26",
-          "time": "21:00",
-          "venue": "Lumen Field",
-          "played": false
-        },
-        {
-          "home": "Algeria",
-          "away": "Japan",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-26",
-          "time": "21:00",
-          "venue": "Arrowhead Stadium",
-          "played": false
-        }
+        {"home": "Mexico", "away": "South Africa", "homeScore": null, "awayScore": null, "date": "2026-06-11", "time": "18:00", "venue": "Estadio Azteca", "played": false},
+        {"home": "South Korea", "away": "Czech Republic", "homeScore": null, "awayScore": null, "date": "2026-06-12", "time": "15:00", "venue": "Lumen Field", "played": false},
+        {"home": "Mexico", "away": "South Korea", "homeScore": null, "awayScore": null, "date": "2026-06-18", "time": "18:00", "venue": "Estadio Akron", "played": false},
+        {"home": "South Africa", "away": "Czech Republic", "homeScore": null, "awayScore": null, "date": "2026-06-18", "time": "21:00", "venue": "AT&T Stadium", "played": false},
+        {"home": "Mexico", "away": "Czech Republic", "homeScore": null, "awayScore": null, "date": "2026-06-25", "time": "21:00", "venue": "Estadio BBVA", "played": false},
+        {"home": "South Africa", "away": "South Korea", "homeScore": null, "awayScore": null, "date": "2026-06-25", "time": "21:00", "venue": "Rose Bowl", "played": false}
       ]
     },
     {
       "id": "B",
       "teams": [
-        {
-          "name": "Argentina",
-          "flag": "🇦🇷",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "Honduras",
-          "flag": "🇭🇳",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "Nigeria",
-          "flag": "🇳🇬",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "South Korea",
-          "flag": "🇰🇷",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        }
+        {"name": "Canada", "flag": "🇨🇦", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Bosnia & Herzegovina", "flag": "🇧🇦", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Qatar", "flag": "🇶🇦", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Switzerland", "flag": "🇨🇭", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0}
       ],
       "matches": [
-        {
-          "home": "Argentina",
-          "away": "Nigeria",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-13",
-          "time": "15:00",
-          "venue": "MetLife Stadium",
-          "played": false
-        },
-        {
-          "home": "South Korea",
-          "away": "Honduras",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-13",
-          "time": "18:00",
-          "venue": "Rose Bowl",
-          "played": false
-        },
-        {
-          "home": "Argentina",
-          "away": "South Korea",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-18",
-          "time": "15:00",
-          "venue": "AT&T Stadium",
-          "played": false
-        },
-        {
-          "home": "Nigeria",
-          "away": "Honduras",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-18",
-          "time": "18:00",
-          "venue": "NRG Stadium",
-          "played": false
-        },
-        {
-          "home": "Argentina",
-          "away": "Honduras",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-26",
-          "time": "21:00",
-          "venue": "Gillette Stadium",
-          "played": false
-        },
-        {
-          "home": "Nigeria",
-          "away": "South Korea",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-26",
-          "time": "21:00",
-          "venue": "Empower Field",
-          "played": false
-        }
+        {"home": "Canada", "away": "Bosnia & Herzegovina", "homeScore": null, "awayScore": null, "date": "2026-06-12", "time": "18:00", "venue": "BMO Field", "played": false},
+        {"home": "Qatar", "away": "Switzerland", "homeScore": null, "awayScore": null, "date": "2026-06-13", "time": "15:00", "venue": "Rose Bowl", "played": false},
+        {"home": "Canada", "away": "Qatar", "homeScore": null, "awayScore": null, "date": "2026-06-19", "time": "15:00", "venue": "BC Place", "played": false},
+        {"home": "Bosnia & Herzegovina", "away": "Switzerland", "homeScore": null, "awayScore": null, "date": "2026-06-19", "time": "18:00", "venue": "SoFi Stadium", "played": false},
+        {"home": "Canada", "away": "Switzerland", "homeScore": null, "awayScore": null, "date": "2026-06-25", "time": "18:00", "venue": "BC Place", "played": false},
+        {"home": "Bosnia & Herzegovina", "away": "Qatar", "homeScore": null, "awayScore": null, "date": "2026-06-25", "time": "18:00", "venue": "Arrowhead Stadium", "played": false}
       ]
     },
     {
       "id": "C",
       "teams": [
-        {
-          "name": "Australia",
-          "flag": "🇦🇺",
-          "played": 1,
-          "won": 1,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 1,
-          "ga": 0,
-          "gd": 1,
-          "pts": 3
-        },
-        {
-          "name": "France",
-          "flag": "🇫🇷",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "Morocco",
-          "flag": "🇲🇦",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "Panama",
-          "flag": "🇵🇦",
-          "played": 1,
-          "won": 0,
-          "drawn": 0,
-          "lost": 1,
-          "gf": 0,
-          "ga": 1,
-          "gd": -1,
-          "pts": 0
-        }
+        {"name": "Brazil", "flag": "🇧🇷", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Morocco", "flag": "🇲🇦", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Haiti", "flag": "🇭🇹", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Scotland", "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0}
       ],
       "matches": [
-        {
-          "home": "France",
-          "away": "Morocco",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-11",
-          "time": "21:00",
-          "venue": "MetLife Stadium",
-          "played": false
-        },
-        {
-          "home": "Australia",
-          "away": "Panama",
-          "homeScore": 1,
-          "awayScore": 0,
-          "date": "2026-06-11",
-          "time": "18:00",
-          "venue": "Rose Bowl",
-          "played": true
-        },
-        {
-          "home": "France",
-          "away": "Australia",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-16",
-          "time": "21:00",
-          "venue": "AT&T Stadium",
-          "played": false
-        },
-        {
-          "home": "Morocco",
-          "away": "Panama",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-16",
-          "time": "18:00",
-          "venue": "NRG Stadium",
-          "played": false
-        },
-        {
-          "home": "France",
-          "away": "Panama",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-25",
-          "time": "21:00",
-          "venue": "Lumen Field",
-          "played": false
-        },
-        {
-          "home": "Morocco",
-          "away": "Australia",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-25",
-          "time": "21:00",
-          "venue": "Arrowhead Stadium",
-          "played": false
-        }
+        {"home": "Brazil", "away": "Morocco", "homeScore": null, "awayScore": null, "date": "2026-06-13", "time": "18:00", "venue": "MetLife Stadium", "played": false},
+        {"home": "Scotland", "away": "Haiti", "homeScore": null, "awayScore": null, "date": "2026-06-13", "time": "21:00", "venue": "Hard Rock Stadium", "played": false},
+        {"home": "Brazil", "away": "Haiti", "homeScore": null, "awayScore": null, "date": "2026-06-19", "time": "21:00", "venue": "MetLife Stadium", "played": false},
+        {"home": "Morocco", "away": "Scotland", "homeScore": null, "awayScore": null, "date": "2026-06-19", "time": "18:00", "venue": "Arrowhead Stadium", "played": false},
+        {"home": "Brazil", "away": "Scotland", "homeScore": null, "awayScore": null, "date": "2026-06-26", "time": "21:00", "venue": "Lincoln Financial Field", "played": false},
+        {"home": "Morocco", "away": "Haiti", "homeScore": null, "awayScore": null, "date": "2026-06-26", "time": "21:00", "venue": "SoFi Stadium", "played": false}
       ]
     },
     {
       "id": "D",
       "teams": [
-        {
-          "name": "England",
-          "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-          "played": 1,
-          "won": 1,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 4,
-          "ga": 2,
-          "gd": 2,
-          "pts": 3
-        },
-        {
-          "name": "El Salvador",
-          "flag": "🇸🇻",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "Iran",
-          "flag": "🇮🇷",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "Senegal",
-          "flag": "🇸🇳",
-          "played": 1,
-          "won": 0,
-          "drawn": 0,
-          "lost": 1,
-          "gf": 2,
-          "ga": 4,
-          "gd": -2,
-          "pts": 0
-        }
+        {"name": "USA", "flag": "🇺🇸", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Paraguay", "flag": "🇵🇾", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Australia", "flag": "🇦🇺", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Turkey", "flag": "🇹🇷", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0}
       ],
       "matches": [
-        {
-          "home": "England",
-          "away": "Senegal",
-          "homeScore": 4,
-          "awayScore": 2,
-          "date": "2026-06-12",
-          "time": "15:00",
-          "venue": "MetLife Stadium",
-          "played": true
-        },
-        {
-          "home": "Iran",
-          "away": "El Salvador",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-12",
-          "time": "12:00",
-          "venue": "Rose Bowl",
-          "played": false
-        },
-        {
-          "home": "England",
-          "away": "Iran",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-17",
-          "time": "15:00",
-          "venue": "AT&T Stadium",
-          "played": false
-        },
-        {
-          "home": "Senegal",
-          "away": "El Salvador",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-17",
-          "time": "12:00",
-          "venue": "NRG Stadium",
-          "played": false
-        },
-        {
-          "home": "England",
-          "away": "El Salvador",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-27",
-          "time": "21:00",
-          "venue": "Lumen Field",
-          "played": false
-        },
-        {
-          "home": "Senegal",
-          "away": "Iran",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-27",
-          "time": "21:00",
-          "venue": "Arrowhead Stadium",
-          "played": false
-        }
+        {"home": "USA", "away": "Paraguay", "homeScore": null, "awayScore": null, "date": "2026-06-12", "time": "21:00", "venue": "MetLife Stadium", "played": false},
+        {"home": "Australia", "away": "Turkey", "homeScore": null, "awayScore": null, "date": "2026-06-13", "time": "21:00", "venue": "BC Place", "played": false},
+        {"home": "USA", "away": "Australia", "homeScore": null, "awayScore": null, "date": "2026-06-19", "time": "21:00", "venue": "Lumen Field", "played": false},
+        {"home": "Paraguay", "away": "Turkey", "homeScore": null, "awayScore": null, "date": "2026-06-19", "time": "15:00", "venue": "AT&T Stadium", "played": false},
+        {"home": "USA", "away": "Turkey", "homeScore": null, "awayScore": null, "date": "2026-06-26", "time": "18:00", "venue": "Rose Bowl", "played": false},
+        {"home": "Paraguay", "away": "Australia", "homeScore": null, "awayScore": null, "date": "2026-06-26", "time": "18:00", "venue": "Hard Rock Stadium", "played": false}
       ]
     },
     {
       "id": "E",
       "teams": [
-        {
-          "name": "Ghana",
-          "flag": "🇬🇭",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "New Zealand",
-          "flag": "🇳🇿",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "Spain",
-          "flag": "🇪🇸",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "USA",
-          "flag": "🇺🇸",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        }
+        {"name": "Germany", "flag": "🇩🇪", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Curaçao", "flag": "🇨🇼", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Ivory Coast", "flag": "🇨🇮", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Ecuador", "flag": "🇪🇨", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0}
       ],
       "matches": [
-        {
-          "home": "Spain",
-          "away": "USA",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-14",
-          "time": "21:00",
-          "venue": "MetLife Stadium",
-          "played": false
-        },
-        {
-          "home": "Ghana",
-          "away": "New Zealand",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-14",
-          "time": "18:00",
-          "venue": "Rose Bowl",
-          "played": false
-        },
-        {
-          "home": "Spain",
-          "away": "Ghana",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-19",
-          "time": "21:00",
-          "venue": "AT&T Stadium",
-          "played": false
-        },
-        {
-          "home": "USA",
-          "away": "New Zealand",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-19",
-          "time": "18:00",
-          "venue": "NRG Stadium",
-          "played": false
-        },
-        {
-          "home": "Spain",
-          "away": "New Zealand",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-28",
-          "time": "21:00",
-          "venue": "Gillette Stadium",
-          "played": false
-        },
-        {
-          "home": "USA",
-          "away": "Ghana",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-28",
-          "time": "21:00",
-          "venue": "Empower Field",
-          "played": false
-        }
+        {"home": "Germany", "away": "Curaçao", "homeScore": null, "awayScore": null, "date": "2026-06-14", "time": "18:00", "venue": "MetLife Stadium", "played": false},
+        {"home": "Ivory Coast", "away": "Ecuador", "homeScore": null, "awayScore": null, "date": "2026-06-14", "time": "21:00", "venue": "Lincoln Financial Field", "played": false},
+        {"home": "Germany", "away": "Ivory Coast", "homeScore": null, "awayScore": null, "date": "2026-06-20", "time": "18:00", "venue": "Levi's Stadium", "played": false},
+        {"home": "Curaçao", "away": "Ecuador", "homeScore": null, "awayScore": null, "date": "2026-06-20", "time": "21:00", "venue": "Rose Bowl", "played": false},
+        {"home": "Germany", "away": "Ecuador", "homeScore": null, "awayScore": null, "date": "2026-06-27", "time": "21:00", "venue": "AT&T Stadium", "played": false},
+        {"home": "Curaçao", "away": "Ivory Coast", "homeScore": null, "awayScore": null, "date": "2026-06-27", "time": "21:00", "venue": "Lumen Field", "played": false}
       ]
     },
     {
       "id": "F",
       "teams": [
-        {
-          "name": "Canada",
-          "flag": "🇨🇦",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "Germany",
-          "flag": "🇩🇪",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "Iraq",
-          "flag": "🇮🇶",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "Tunisia",
-          "flag": "🇹🇳",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        }
+        {"name": "Netherlands", "flag": "🇳🇱", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Japan", "flag": "🇯🇵", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Sweden", "flag": "🇸🇪", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Tunisia", "flag": "🇹🇳", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0}
       ],
       "matches": [
-        {
-          "home": "Germany",
-          "away": "Canada",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-14",
-          "time": "15:00",
-          "venue": "MetLife Stadium",
-          "played": false
-        },
-        {
-          "home": "Tunisia",
-          "away": "Iraq",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-14",
-          "time": "12:00",
-          "venue": "Rose Bowl",
-          "played": false
-        },
-        {
-          "home": "Germany",
-          "away": "Tunisia",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-19",
-          "time": "15:00",
-          "venue": "Azteca Stadium",
-          "played": false
-        },
-        {
-          "home": "Canada",
-          "away": "Iraq",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-19",
-          "time": "12:00",
-          "venue": "BC Place",
-          "played": false
-        },
-        {
-          "home": "Germany",
-          "away": "Iraq",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-28",
-          "time": "21:00",
-          "venue": "MetLife Stadium",
-          "played": false
-        },
-        {
-          "home": "Canada",
-          "away": "Tunisia",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-28",
-          "time": "21:00",
-          "venue": "BMO Field",
-          "played": false
-        }
+        {"home": "Netherlands", "away": "Japan", "homeScore": null, "awayScore": null, "date": "2026-06-14", "time": "15:00", "venue": "SoFi Stadium", "played": false},
+        {"home": "Sweden", "away": "Tunisia", "homeScore": null, "awayScore": null, "date": "2026-06-14", "time": "18:00", "venue": "Hard Rock Stadium", "played": false},
+        {"home": "Netherlands", "away": "Sweden", "homeScore": null, "awayScore": null, "date": "2026-06-20", "time": "15:00", "venue": "Arrowhead Stadium", "played": false},
+        {"home": "Japan", "away": "Tunisia", "homeScore": null, "awayScore": null, "date": "2026-06-20", "time": "18:00", "venue": "Gillette Stadium", "played": false},
+        {"home": "Netherlands", "away": "Tunisia", "homeScore": null, "awayScore": null, "date": "2026-06-27", "time": "18:00", "venue": "Rose Bowl", "played": false},
+        {"home": "Japan", "away": "Sweden", "homeScore": null, "awayScore": null, "date": "2026-06-27", "time": "18:00", "venue": "Levi's Stadium", "played": false}
       ]
     },
     {
       "id": "G",
       "teams": [
-        {
-          "name": "Colombia",
-          "flag": "🇨🇴",
-          "played": 1,
-          "won": 1,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 3,
-          "ga": 1,
-          "gd": 2,
-          "pts": 3
-        },
-        {
-          "name": "Jamaica",
-          "flag": "🇯🇲",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "Saudi Arabia",
-          "flag": "🇸🇦",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "Portugal",
-          "flag": "🇵🇹",
-          "played": 1,
-          "won": 0,
-          "drawn": 0,
-          "lost": 1,
-          "gf": 1,
-          "ga": 3,
-          "gd": -2,
-          "pts": 0
-        }
+        {"name": "Belgium", "flag": "🇧🇪", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Egypt", "flag": "🇪🇬", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Iran", "flag": "🇮🇷", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "New Zealand", "flag": "🇳🇿", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0}
       ],
       "matches": [
-        {
-          "home": "Portugal",
-          "away": "Colombia",
-          "homeScore": 1,
-          "awayScore": 3,
-          "date": "2026-06-15",
-          "time": "21:00",
-          "venue": "MetLife Stadium",
-          "played": true
-        },
-        {
-          "home": "Saudi Arabia",
-          "away": "Jamaica",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-15",
-          "time": "18:00",
-          "venue": "Rose Bowl",
-          "played": false
-        },
-        {
-          "home": "Portugal",
-          "away": "Saudi Arabia",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-20",
-          "time": "21:00",
-          "venue": "AT&T Stadium",
-          "played": false
-        },
-        {
-          "home": "Colombia",
-          "away": "Jamaica",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-20",
-          "time": "18:00",
-          "venue": "NRG Stadium",
-          "played": false
-        },
-        {
-          "home": "Portugal",
-          "away": "Jamaica",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-29",
-          "time": "21:00",
-          "venue": "Lumen Field",
-          "played": false
-        },
-        {
-          "home": "Colombia",
-          "away": "Saudi Arabia",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-29",
-          "time": "21:00",
-          "venue": "Arrowhead Stadium",
-          "played": false
-        }
+        {"home": "Belgium", "away": "Egypt", "homeScore": null, "awayScore": null, "date": "2026-06-15", "time": "18:00", "venue": "MetLife Stadium", "played": false},
+        {"home": "Iran", "away": "New Zealand", "homeScore": null, "awayScore": null, "date": "2026-06-15", "time": "21:00", "venue": "SoFi Stadium", "played": false},
+        {"home": "Belgium", "away": "Iran", "homeScore": null, "awayScore": null, "date": "2026-06-21", "time": "18:00", "venue": "Lincoln Financial Field", "played": false},
+        {"home": "Egypt", "away": "New Zealand", "homeScore": null, "awayScore": null, "date": "2026-06-21", "time": "21:00", "venue": "Lumen Field", "played": false},
+        {"home": "Belgium", "away": "New Zealand", "homeScore": null, "awayScore": null, "date": "2026-06-28", "time": "21:00", "venue": "Hard Rock Stadium", "played": false},
+        {"home": "Egypt", "away": "Iran", "homeScore": null, "awayScore": null, "date": "2026-06-28", "time": "21:00", "venue": "SoFi Stadium", "played": false}
       ]
     },
     {
       "id": "H",
       "teams": [
-        {
-          "name": "Ecuador",
-          "flag": "🇪🇨",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "Egypt",
-          "flag": "🇪🇬",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "Netherlands",
-          "flag": "🇳🇱",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "Scotland",
-          "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        }
+        {"name": "Spain", "flag": "🇪🇸", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Cape Verde", "flag": "🇨🇻", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Saudi Arabia", "flag": "🇸🇦", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Uruguay", "flag": "🇺🇾", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0}
       ],
       "matches": [
-        {
-          "home": "Netherlands",
-          "away": "Ecuador",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-15",
-          "time": "15:00",
-          "venue": "MetLife Stadium",
-          "played": false
-        },
-        {
-          "home": "Egypt",
-          "away": "Scotland",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-15",
-          "time": "12:00",
-          "venue": "Rose Bowl",
-          "played": false
-        },
-        {
-          "home": "Netherlands",
-          "away": "Egypt",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-20",
-          "time": "15:00",
-          "venue": "AT&T Stadium",
-          "played": false
-        },
-        {
-          "home": "Ecuador",
-          "away": "Scotland",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-20",
-          "time": "12:00",
-          "venue": "NRG Stadium",
-          "played": false
-        },
-        {
-          "home": "Netherlands",
-          "away": "Scotland",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-29",
-          "time": "21:00",
-          "venue": "Gillette Stadium",
-          "played": false
-        },
-        {
-          "home": "Ecuador",
-          "away": "Egypt",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-29",
-          "time": "21:00",
-          "venue": "Empower Field",
-          "played": false
-        }
+        {"home": "Spain", "away": "Cape Verde", "homeScore": null, "awayScore": null, "date": "2026-06-15", "time": "15:00", "venue": "Rose Bowl", "played": false},
+        {"home": "Saudi Arabia", "away": "Uruguay", "homeScore": null, "awayScore": null, "date": "2026-06-15", "time": "18:00", "venue": "BC Place", "played": false},
+        {"home": "Spain", "away": "Saudi Arabia", "homeScore": null, "awayScore": null, "date": "2026-06-21", "time": "15:00", "venue": "MetLife Stadium", "played": false},
+        {"home": "Cape Verde", "away": "Uruguay", "homeScore": null, "awayScore": null, "date": "2026-06-21", "time": "18:00", "venue": "AT&T Stadium", "played": false},
+        {"home": "Spain", "away": "Uruguay", "homeScore": null, "awayScore": null, "date": "2026-06-27", "time": "15:00", "venue": "MetLife Stadium", "played": false},
+        {"home": "Cape Verde", "away": "Saudi Arabia", "homeScore": null, "awayScore": null, "date": "2026-06-27", "time": "15:00", "venue": "Arrowhead Stadium", "played": false}
       ]
     },
     {
       "id": "I",
       "teams": [
-        {
-          "name": "Belgium",
-          "flag": "🇧🇪",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "Indonesia",
-          "flag": "🇮🇩",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "Switzerland",
-          "flag": "🇨🇭",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "Uruguay",
-          "flag": "🇺🇾",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        }
+        {"name": "France", "flag": "🇫🇷", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Senegal", "flag": "🇸🇳", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Iraq", "flag": "🇮🇶", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Norway", "flag": "🇳🇴", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0}
       ],
       "matches": [
-        {
-          "home": "Belgium",
-          "away": "Uruguay",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-13",
-          "time": "21:00",
-          "venue": "MetLife Stadium",
-          "played": false
-        },
-        {
-          "home": "Switzerland",
-          "away": "Indonesia",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-13",
-          "time": "15:00",
-          "venue": "Rose Bowl",
-          "played": false
-        },
-        {
-          "home": "Belgium",
-          "away": "Switzerland",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-18",
-          "time": "21:00",
-          "venue": "AT&T Stadium",
-          "played": false
-        },
-        {
-          "home": "Uruguay",
-          "away": "Indonesia",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-18",
-          "time": "15:00",
-          "venue": "NRG Stadium",
-          "played": false
-        },
-        {
-          "home": "Belgium",
-          "away": "Indonesia",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-27",
-          "time": "21:00",
-          "venue": "Lumen Field",
-          "played": false
-        },
-        {
-          "home": "Uruguay",
-          "away": "Switzerland",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-27",
-          "time": "21:00",
-          "venue": "Arrowhead Stadium",
-          "played": false
-        }
+        {"home": "France", "away": "Senegal", "homeScore": null, "awayScore": null, "date": "2026-06-16", "time": "18:00", "venue": "MetLife Stadium", "played": false},
+        {"home": "Iraq", "away": "Norway", "homeScore": null, "awayScore": null, "date": "2026-06-16", "time": "21:00", "venue": "Rose Bowl", "played": false},
+        {"home": "France", "away": "Iraq", "homeScore": null, "awayScore": null, "date": "2026-06-22", "time": "18:00", "venue": "SoFi Stadium", "played": false},
+        {"home": "Senegal", "away": "Norway", "homeScore": null, "awayScore": null, "date": "2026-06-22", "time": "21:00", "venue": "Hard Rock Stadium", "played": false},
+        {"home": "France", "away": "Norway", "homeScore": null, "awayScore": null, "date": "2026-06-29", "time": "21:00", "venue": "AT&T Stadium", "played": false},
+        {"home": "Senegal", "away": "Iraq", "homeScore": null, "awayScore": null, "date": "2026-06-29", "time": "21:00", "venue": "Rose Bowl", "played": false}
       ]
     },
     {
       "id": "J",
       "teams": [
-        {
-          "name": "Austria",
-          "flag": "🇦🇹",
-          "played": 1,
-          "won": 1,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 3,
-          "ga": 1,
-          "gd": 2,
-          "pts": 3
-        },
-        {
-          "name": "Italy",
-          "flag": "🇮🇹",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "Ivory Coast",
-          "flag": "🇨🇮",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "Venezuela",
-          "flag": "🇻🇪",
-          "played": 1,
-          "won": 0,
-          "drawn": 0,
-          "lost": 1,
-          "gf": 1,
-          "ga": 3,
-          "gd": -2,
-          "pts": 0
-        }
+        {"name": "Argentina", "flag": "🇦🇷", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Algeria", "flag": "🇩🇿", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Austria", "flag": "🇦🇹", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Jordan", "flag": "🇯🇴", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0}
       ],
       "matches": [
-        {
-          "home": "Italy",
-          "away": "Ivory Coast",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-13",
-          "time": "12:00",
-          "venue": "MetLife Stadium",
-          "played": false
-        },
-        {
-          "home": "Austria",
-          "away": "Venezuela",
-          "homeScore": 3,
-          "awayScore": 1,
-          "date": "2026-06-13",
-          "time": "21:00",
-          "venue": "Rose Bowl",
-          "played": true
-        },
-        {
-          "home": "Italy",
-          "away": "Austria",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-18",
-          "time": "12:00",
-          "venue": "AT&T Stadium",
-          "played": false
-        },
-        {
-          "home": "Ivory Coast",
-          "away": "Venezuela",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-18",
-          "time": "21:00",
-          "venue": "NRG Stadium",
-          "played": false
-        },
-        {
-          "home": "Italy",
-          "away": "Venezuela",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-27",
-          "time": "21:00",
-          "venue": "Gillette Stadium",
-          "played": false
-        },
-        {
-          "home": "Ivory Coast",
-          "away": "Austria",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-27",
-          "time": "21:00",
-          "venue": "Empower Field",
-          "played": false
-        }
+        {"home": "Argentina", "away": "Algeria", "homeScore": null, "awayScore": null, "date": "2026-06-16", "time": "15:00", "venue": "AT&T Stadium", "played": false},
+        {"home": "Austria", "away": "Jordan", "homeScore": null, "awayScore": null, "date": "2026-06-16", "time": "15:00", "venue": "Arrowhead Stadium", "played": false},
+        {"home": "Argentina", "away": "Austria", "homeScore": null, "awayScore": null, "date": "2026-06-22", "time": "15:00", "venue": "MetLife Stadium", "played": false},
+        {"home": "Algeria", "away": "Jordan", "homeScore": null, "awayScore": null, "date": "2026-06-22", "time": "15:00", "venue": "Gillette Stadium", "played": false},
+        {"home": "Argentina", "away": "Jordan", "homeScore": null, "awayScore": null, "date": "2026-06-29", "time": "18:00", "venue": "Levi's Stadium", "played": false},
+        {"home": "Algeria", "away": "Austria", "homeScore": null, "awayScore": null, "date": "2026-06-29", "time": "18:00", "venue": "BC Place", "played": false}
       ]
     },
     {
       "id": "K",
       "teams": [
-        {
-          "name": "Croatia",
-          "flag": "🇭🇷",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "Mexico",
-          "flag": "🇲🇽",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "Poland",
-          "flag": "🇵🇱",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "Uzbekistan",
-          "flag": "🇺🇿",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        }
+        {"name": "Portugal", "flag": "🇵🇹", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "DR Congo", "flag": "🇨🇩", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Uzbekistan", "flag": "🇺🇿", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Colombia", "flag": "🇨🇴", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0}
       ],
       "matches": [
-        {
-          "home": "Croatia",
-          "away": "Mexico",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-16",
-          "time": "15:00",
-          "venue": "Azteca Stadium",
-          "played": false
-        },
-        {
-          "home": "Poland",
-          "away": "Uzbekistan",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-16",
-          "time": "12:00",
-          "venue": "MetLife Stadium",
-          "played": false
-        },
-        {
-          "home": "Croatia",
-          "away": "Poland",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-21",
-          "time": "15:00",
-          "venue": "Rose Bowl",
-          "played": false
-        },
-        {
-          "home": "Mexico",
-          "away": "Uzbekistan",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-21",
-          "time": "21:00",
-          "venue": "Azteca Stadium",
-          "played": false
-        },
-        {
-          "home": "Croatia",
-          "away": "Uzbekistan",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-30",
-          "time": "21:00",
-          "venue": "AT&T Stadium",
-          "played": false
-        },
-        {
-          "home": "Mexico",
-          "away": "Poland",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-30",
-          "time": "21:00",
-          "venue": "Azteca Stadium",
-          "played": false
-        }
+        {"home": "Portugal", "away": "DR Congo", "homeScore": null, "awayScore": null, "date": "2026-06-17", "time": "18:00", "venue": "Rose Bowl", "played": false},
+        {"home": "Uzbekistan", "away": "Colombia", "homeScore": null, "awayScore": null, "date": "2026-06-17", "time": "21:00", "venue": "AT&T Stadium", "played": false},
+        {"home": "Portugal", "away": "Uzbekistan", "homeScore": null, "awayScore": null, "date": "2026-06-23", "time": "18:00", "venue": "MetLife Stadium", "played": false},
+        {"home": "DR Congo", "away": "Colombia", "homeScore": null, "awayScore": null, "date": "2026-06-23", "time": "21:00", "venue": "BC Place", "played": false},
+        {"home": "Portugal", "away": "Colombia", "homeScore": null, "awayScore": null, "date": "2026-06-30", "time": "21:00", "venue": "Lincoln Financial Field", "played": false},
+        {"home": "DR Congo", "away": "Uzbekistan", "homeScore": null, "awayScore": null, "date": "2026-06-30", "time": "21:00", "venue": "Hard Rock Stadium", "played": false}
       ]
     },
     {
       "id": "L",
       "teams": [
-        {
-          "name": "Cameroon",
-          "flag": "🇨🇲",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "Denmark",
-          "flag": "🇩🇰",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "Serbia",
-          "flag": "🇷🇸",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        },
-        {
-          "name": "Turkey",
-          "flag": "🇹🇷",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0
-        }
+        {"name": "England", "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Croatia", "flag": "🇭🇷", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Ghana", "flag": "🇬🇭", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0},
+        {"name": "Panama", "flag": "🇵🇦", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0}
       ],
       "matches": [
-        {
-          "home": "Turkey",
-          "away": "Denmark",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-16",
-          "time": "21:00",
-          "venue": "MetLife Stadium",
-          "played": false
-        },
-        {
-          "home": "Serbia",
-          "away": "Cameroon",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-16",
-          "time": "18:00",
-          "venue": "Rose Bowl",
-          "played": false
-        },
-        {
-          "home": "Turkey",
-          "away": "Serbia",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-21",
-          "time": "18:00",
-          "venue": "AT&T Stadium",
-          "played": false
-        },
-        {
-          "home": "Denmark",
-          "away": "Cameroon",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-21",
-          "time": "12:00",
-          "venue": "NRG Stadium",
-          "played": false
-        },
-        {
-          "home": "Turkey",
-          "away": "Cameroon",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-30",
-          "time": "21:00",
-          "venue": "Lumen Field",
-          "played": false
-        },
-        {
-          "home": "Denmark",
-          "away": "Serbia",
-          "homeScore": null,
-          "awayScore": null,
-          "date": "2026-06-30",
-          "time": "21:00",
-          "venue": "Gillette Stadium",
-          "played": false
-        }
+        {"home": "England", "away": "Croatia", "homeScore": null, "awayScore": null, "date": "2026-06-17", "time": "15:00", "venue": "MetLife Stadium", "played": false},
+        {"home": "Ghana", "away": "Panama", "homeScore": null, "awayScore": null, "date": "2026-06-17", "time": "18:00", "venue": "Levi's Stadium", "played": false},
+        {"home": "England", "away": "Ghana", "homeScore": null, "awayScore": null, "date": "2026-06-23", "time": "15:00", "venue": "Lumen Field", "played": false},
+        {"home": "Croatia", "away": "Panama", "homeScore": null, "awayScore": null, "date": "2026-06-23", "time": "18:00", "venue": "Gillette Stadium", "played": false},
+        {"home": "England", "away": "Panama", "homeScore": null, "awayScore": null, "date": "2026-06-30", "time": "18:00", "venue": "AT&T Stadium", "played": false},
+        {"home": "Croatia", "away": "Ghana", "homeScore": null, "awayScore": null, "date": "2026-06-30", "time": "18:00", "venue": "Rose Bowl", "played": false}
       ]
     }
   ],
   "knockout": {
     "round_of_32": [
-      {
-        "id": 1,
-        "home": "1A",
-        "away": "2C",
-        "homeScore": null,
-        "awayScore": null,
-        "homePenalty": null,
-        "awayPenalty": null,
-        "date": "2026-07-02",
-        "venue": "MetLife Stadium",
-        "played": false
-      },
-      {
-        "id": 2,
-        "home": "1C",
-        "away": "2A",
-        "homeScore": null,
-        "awayScore": null,
-        "homePenalty": null,
-        "awayPenalty": null,
-        "date": "2026-07-02",
-        "venue": "Rose Bowl",
-        "played": false
-      },
-      {
-        "id": 3,
-        "home": "1E",
-        "away": "2G",
-        "homeScore": null,
-        "awayScore": null,
-        "homePenalty": null,
-        "awayPenalty": null,
-        "date": "2026-07-03",
-        "venue": "AT&T Stadium",
-        "played": false
-      },
-      {
-        "id": 4,
-        "home": "1G",
-        "away": "2E",
-        "homeScore": null,
-        "awayScore": null,
-        "homePenalty": null,
-        "awayPenalty": null,
-        "date": "2026-07-03",
-        "venue": "NRG Stadium",
-        "played": false
-      },
-      {
-        "id": 5,
-        "home": "1I",
-        "away": "2K",
-        "homeScore": null,
-        "awayScore": null,
-        "homePenalty": null,
-        "awayPenalty": null,
-        "date": "2026-07-04",
-        "venue": "Lumen Field",
-        "played": false
-      },
-      {
-        "id": 6,
-        "home": "1K",
-        "away": "2I",
-        "homeScore": null,
-        "awayScore": null,
-        "homePenalty": null,
-        "awayPenalty": null,
-        "date": "2026-07-04",
-        "venue": "Arrowhead Stadium",
-        "played": false
-      },
-      {
-        "id": 7,
-        "home": "1B",
-        "away": "2D",
-        "homeScore": null,
-        "awayScore": null,
-        "homePenalty": null,
-        "awayPenalty": null,
-        "date": "2026-07-05",
-        "venue": "Gillette Stadium",
-        "played": false
-      },
-      {
-        "id": 8,
-        "home": "1D",
-        "away": "2B",
-        "homeScore": null,
-        "awayScore": null,
-        "homePenalty": null,
-        "awayPenalty": null,
-        "date": "2026-07-05",
-        "venue": "Empower Field",
-        "played": false
-      },
-      {
-        "id": 9,
-        "home": "1F",
-        "away": "2H",
-        "homeScore": null,
-        "awayScore": null,
-        "homePenalty": null,
-        "awayPenalty": null,
-        "date": "2026-07-02",
-        "venue": "Azteca Stadium",
-        "played": false
-      },
-      {
-        "id": 10,
-        "home": "1H",
-        "away": "2F",
-        "homeScore": null,
-        "awayScore": null,
-        "homePenalty": null,
-        "awayPenalty": null,
-        "date": "2026-07-02",
-        "venue": "BC Place",
-        "played": false
-      },
-      {
-        "id": 11,
-        "home": "1J",
-        "away": "2L",
-        "homeScore": null,
-        "awayScore": null,
-        "homePenalty": null,
-        "awayPenalty": null,
-        "date": "2026-07-03",
-        "venue": "BMO Field",
-        "played": false
-      },
-      {
-        "id": 12,
-        "home": "1L",
-        "away": "2J",
-        "homeScore": null,
-        "awayScore": null,
-        "homePenalty": null,
-        "awayPenalty": null,
-        "date": "2026-07-03",
-        "venue": "MetLife Stadium",
-        "played": false
-      },
-      {
-        "id": 13,
-        "home": "3rd Best",
-        "away": "3rd Best",
-        "homeScore": null,
-        "awayScore": null,
-        "homePenalty": null,
-        "awayPenalty": null,
-        "date": "2026-07-04",
-        "venue": "Rose Bowl",
-        "played": false
-      },
-      {
-        "id": 14,
-        "home": "3rd Best",
-        "away": "3rd Best",
-        "homeScore": null,
-        "awayScore": null,
-        "homePenalty": null,
-        "awayPenalty": null,
-        "date": "2026-07-04",
-        "venue": "AT&T Stadium",
-        "played": false
-      },
-      {
-        "id": 15,
-        "home": "3rd Best",
-        "away": "3rd Best",
-        "homeScore": null,
-        "awayScore": null,
-        "homePenalty": null,
-        "awayPenalty": null,
-        "date": "2026-07-05",
-        "venue": "NRG Stadium",
-        "played": false
-      },
-      {
-        "id": 16,
-        "home": "3rd Best",
-        "away": "3rd Best",
-        "homeScore": null,
-        "awayScore": null,
-        "homePenalty": null,
-        "awayPenalty": null,
-        "date": "2026-07-05",
-        "venue": "Lumen Field",
-        "played": false
-      }
+      {"id": 1, "home": "1A", "away": "2C", "homeScore": null, "awayScore": null, "homePenalty": null, "awayPenalty": null, "date": "2026-07-02", "venue": "MetLife Stadium", "played": false},
+      {"id": 2, "home": "1C", "away": "2A", "homeScore": null, "awayScore": null, "homePenalty": null, "awayPenalty": null, "date": "2026-07-02", "venue": "Rose Bowl", "played": false},
+      {"id": 3, "home": "1E", "away": "2G", "homeScore": null, "awayScore": null, "homePenalty": null, "awayPenalty": null, "date": "2026-07-03", "venue": "AT&T Stadium", "played": false},
+      {"id": 4, "home": "1G", "away": "2E", "homeScore": null, "awayScore": null, "homePenalty": null, "awayPenalty": null, "date": "2026-07-03", "venue": "SoFi Stadium", "played": false},
+      {"id": 5, "home": "1I", "away": "2K", "homeScore": null, "awayScore": null, "homePenalty": null, "awayPenalty": null, "date": "2026-07-04", "venue": "Lumen Field", "played": false},
+      {"id": 6, "home": "1K", "away": "2I", "homeScore": null, "awayScore": null, "homePenalty": null, "awayPenalty": null, "date": "2026-07-04", "venue": "Arrowhead Stadium", "played": false},
+      {"id": 7, "home": "1B", "away": "2D", "homeScore": null, "awayScore": null, "homePenalty": null, "awayPenalty": null, "date": "2026-07-05", "venue": "Gillette Stadium", "played": false},
+      {"id": 8, "home": "1D", "away": "2B", "homeScore": null, "awayScore": null, "homePenalty": null, "awayPenalty": null, "date": "2026-07-05", "venue": "Lincoln Financial Field", "played": false},
+      {"id": 9, "home": "1F", "away": "2H", "homeScore": null, "awayScore": null, "homePenalty": null, "awayPenalty": null, "date": "2026-07-02", "venue": "Estadio Azteca", "played": false},
+      {"id": 10, "home": "1H", "away": "2F", "homeScore": null, "awayScore": null, "homePenalty": null, "awayPenalty": null, "date": "2026-07-02", "venue": "BC Place", "played": false},
+      {"id": 11, "home": "1J", "away": "2L", "homeScore": null, "awayScore": null, "homePenalty": null, "awayPenalty": null, "date": "2026-07-03", "venue": "BMO Field", "played": false},
+      {"id": 12, "home": "1L", "away": "2J", "homeScore": null, "awayScore": null, "homePenalty": null, "awayPenalty": null, "date": "2026-07-03", "venue": "MetLife Stadium", "played": false},
+      {"id": 13, "home": "3rd Best", "away": "3rd Best", "homeScore": null, "awayScore": null, "homePenalty": null, "awayPenalty": null, "date": "2026-07-04", "venue": "Rose Bowl", "played": false},
+      {"id": 14, "home": "3rd Best", "away": "3rd Best", "homeScore": null, "awayScore": null, "homePenalty": null, "awayPenalty": null, "date": "2026-07-04", "venue": "Hard Rock Stadium", "played": false},
+      {"id": 15, "home": "3rd Best", "away": "3rd Best", "homeScore": null, "awayScore": null, "homePenalty": null, "awayPenalty": null, "date": "2026-07-05", "venue": "Levi's Stadium", "played": false},
+      {"id": 16, "home": "3rd Best", "away": "3rd Best", "homeScore": null, "awayScore": null, "homePenalty": null, "awayPenalty": null, "date": "2026-07-05", "venue": "Lumen Field", "played": false}
     ],
     "round_of_16": [
-      {
-        "id": 17,
-        "home": "G-R32M1",
-        "away": "G-R32M2",
-        "homeScore": null,
-        "awayScore": null,
-        "homePenalty": null,
-        "awayPenalty": null,
-        "date": "2026-07-08",
-        "venue": "MetLife Stadium",
-        "played": false
-      },
-      {
-        "id": 18,
-        "home": "G-R32M3",
-        "away": "G-R32M4",
-        "homeScore": null,
-        "awayScore": null,
-        "homePenalty": null,
-        "awayPenalty": null,
-        "date": "2026-07-08",
-        "venue": "Rose Bowl",
-        "played": false
-      },
-      {
-        "id": 19,
-        "home": "G-R32M5",
-        "away": "G-R32M6",
-        "homeScore": null,
-        "awayScore": null,
-        "homePenalty": null,
-        "awayPenalty": null,
-        "date": "2026-07-09",
-        "venue": "AT&T Stadium",
-        "played": false
-      },
-      {
-        "id": 20,
-        "home": "G-R32M7",
-        "away": "G-R32M8",
-        "homeScore": null,
-        "awayScore": null,
-        "homePenalty": null,
-        "awayPenalty": null,
-        "date": "2026-07-09",
-        "venue": "NRG Stadium",
-        "played": false
-      },
-      {
-        "id": 21,
-        "home": "G-R32M9",
-        "away": "G-R32M10",
-        "homeScore": null,
-        "awayScore": null,
-        "homePenalty": null,
-        "awayPenalty": null,
-        "date": "2026-07-10",
-        "venue": "Lumen Field",
-        "played": false
-      },
-      {
-        "id": 22,
-        "home": "G-R32M11",
-        "away": "G-R32M12",
-        "homeScore": null,
-        "awayScore": null,
-        "homePenalty": null,
-        "awayPenalty": null,
-        "date": "2026-07-10",
-        "venue": "Arrowhead Stadium",
-        "played": false
-      },
-      {
-        "id": 23,
-        "home": "G-R32M13",
-        "away": "G-R32M14",
-        "homeScore": null,
-        "awayScore": null,
-        "homePenalty": null,
-        "awayPenalty": null,
-        "date": "2026-07-11",
-        "venue": "Gillette Stadium",
-        "played": false
-      },
-      {
-        "id": 24,
-        "home": "G-R32M15",
-        "away": "G-R32M16",
-        "homeScore": null,
-        "awayScore": null,
-        "homePenalty": null,
-        "awayPenalty": null,
-        "date": "2026-07-11",
-        "venue": "Empower Field",
-        "played": false
-      }
+      {"id": 17, "home": "G-R32M1", "away": "G-R32M2", "homeScore": null, "awayScore": null, "homePenalty": null, "awayPenalty": null, "date": "2026-07-07", "venue": "MetLife Stadium", "played": false},
+      {"id": 18, "home": "G-R32M3", "away": "G-R32M4", "homeScore": null, "awayScore": null, "homePenalty": null, "awayPenalty": null, "date": "2026-07-07", "venue": "Rose Bowl", "played": false},
+      {"id": 19, "home": "G-R32M5", "away": "G-R32M6", "homeScore": null, "awayScore": null, "homePenalty": null, "awayPenalty": null, "date": "2026-07-08", "venue": "AT&T Stadium", "played": false},
+      {"id": 20, "home": "G-R32M7", "away": "G-R32M8", "homeScore": null, "awayScore": null, "homePenalty": null, "awayPenalty": null, "date": "2026-07-08", "venue": "SoFi Stadium", "played": false},
+      {"id": 21, "home": "G-R32M9", "away": "G-R32M10", "homeScore": null, "awayScore": null, "homePenalty": null, "awayPenalty": null, "date": "2026-07-09", "venue": "Lumen Field", "played": false},
+      {"id": 22, "home": "G-R32M11", "away": "G-R32M12", "homeScore": null, "awayScore": null, "homePenalty": null, "awayPenalty": null, "date": "2026-07-09", "venue": "Arrowhead Stadium", "played": false},
+      {"id": 23, "home": "G-R32M13", "away": "G-R32M14", "homeScore": null, "awayScore": null, "homePenalty": null, "awayPenalty": null, "date": "2026-07-10", "venue": "Gillette Stadium", "played": false},
+      {"id": 24, "home": "G-R32M15", "away": "G-R32M16", "homeScore": null, "awayScore": null, "homePenalty": null, "awayPenalty": null, "date": "2026-07-10", "venue": "Lincoln Financial Field", "played": false}
     ],
     "quarter_finals": [
-      {
-        "id": 25,
-        "home": "G-R16M17",
-        "away": "G-R16M18",
-        "homeScore": null,
-        "awayScore": null,
-        "homePenalty": null,
-        "awayPenalty": null,
-        "date": "2026-07-14",
-        "venue": "MetLife Stadium",
-        "played": false
-      },
-      {
-        "id": 26,
-        "home": "G-R16M19",
-        "away": "G-R16M20",
-        "homeScore": null,
-        "awayScore": null,
-        "homePenalty": null,
-        "awayPenalty": null,
-        "date": "2026-07-14",
-        "venue": "Rose Bowl",
-        "played": false
-      },
-      {
-        "id": 27,
-        "home": "G-R16M21",
-        "away": "G-R16M22",
-        "homeScore": null,
-        "awayScore": null,
-        "homePenalty": null,
-        "awayPenalty": null,
-        "date": "2026-07-15",
-        "venue": "AT&T Stadium",
-        "played": false
-      },
-      {
-        "id": 28,
-        "home": "G-R16M23",
-        "away": "G-R16M24",
-        "homeScore": null,
-        "awayScore": null,
-        "homePenalty": null,
-        "awayPenalty": null,
-        "date": "2026-07-15",
-        "venue": "NRG Stadium",
-        "played": false
-      }
+      {"id": 25, "home": "G-R16M17", "away": "G-R16M18", "homeScore": null, "awayScore": null, "homePenalty": null, "awayPenalty": null, "date": "2026-07-13", "venue": "MetLife Stadium", "played": false},
+      {"id": 26, "home": "G-R16M19", "away": "G-R16M20", "homeScore": null, "awayScore": null, "homePenalty": null, "awayPenalty": null, "date": "2026-07-13", "venue": "Rose Bowl", "played": false},
+      {"id": 27, "home": "G-R16M21", "away": "G-R16M22", "homeScore": null, "awayScore": null, "homePenalty": null, "awayPenalty": null, "date": "2026-07-14", "venue": "AT&T Stadium", "played": false},
+      {"id": 28, "home": "G-R16M23", "away": "G-R16M24", "homeScore": null, "awayScore": null, "homePenalty": null, "awayPenalty": null, "date": "2026-07-14", "venue": "SoFi Stadium", "played": false}
     ],
     "semi_finals": [
-      {
-        "id": 29,
-        "home": "G-QFM25",
-        "away": "G-QFM26",
-        "homeScore": null,
-        "awayScore": null,
-        "homePenalty": null,
-        "awayPenalty": null,
-        "date": "2026-07-19",
-        "venue": "MetLife Stadium",
-        "played": false
-      },
-      {
-        "id": 30,
-        "home": "G-QFM27",
-        "away": "G-QFM28",
-        "homeScore": null,
-        "awayScore": null,
-        "homePenalty": null,
-        "awayPenalty": null,
-        "date": "2026-07-20",
-        "venue": "Rose Bowl",
-        "played": false
-      }
+      {"id": 29, "home": "G-QFM25", "away": "G-QFM26", "homeScore": null, "awayScore": null, "homePenalty": null, "awayPenalty": null, "date": "2026-07-15", "venue": "MetLife Stadium", "played": false},
+      {"id": 30, "home": "G-QFM27", "away": "G-QFM28", "homeScore": null, "awayScore": null, "homePenalty": null, "awayPenalty": null, "date": "2026-07-16", "venue": "Rose Bowl", "played": false}
     ],
     "third_place": {
       "id": 31,
@@ -1765,7 +259,7 @@
       "awayScore": null,
       "homePenalty": null,
       "awayPenalty": null,
-      "date": "2026-07-25",
+      "date": "2026-07-18",
       "venue": "AT&T Stadium",
       "played": false
     },
@@ -1777,7 +271,7 @@
       "awayScore": null,
       "homePenalty": null,
       "awayPenalty": null,
-      "date": "2026-07-26",
+      "date": "2026-07-19",
       "venue": "MetLife Stadium",
       "played": false
     }
