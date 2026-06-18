@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel — FIFA Jahon Chempionati 2026</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    /* ─── Admin extras ──────────────────────────────────────────────────────── */
+    body { background: #07080f; }
+
+    .admin-header {
+      background: linear-gradient(135deg, #1a0a2e, #2d1060, #1a0a2e);
+      border-bottom: 2px solid #9c27b0;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 20px rgba(156,39,176,0.3);
+    }
+
+    .admin-title {
+      font-size: 1.2rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, #fff, #ce93d8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .admin-user { font-size: 0.8rem; color: #ce93d8; }
+
+    #admin-main { max-width: 1200px; margin: 0 auto; padding: 24px 16px; }
+
+    /* Login */
+    .login-box {
+      max-width: 380px;
+      margin: 80px auto;
+      background: var(--card);
+      border: 1px solid #9c27b0;
+      border-radius: var(--radius);
+      padding: 36px;
+      box-shadow: 0 8px 40px rgba(156,39,176,0.3);
+    }
+    .login-box h2 { margin-bottom: 8px; font-size: 1.3rem; text-align: center; }
+    .login-box p  { color: var(--text2); font-size: 0.85rem; text-align: center; margin-bottom: 24px; }
+
+    /* Forms */
+    .form-group { margin-bottom: 16px; }
+    .form-group label { display: block; font-size: 0.78rem; color: var(--text2); margin-bottom: 6px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+    .form-group input, .form-group select {
+      width: 100%;
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text);
+      padding: 10px 14px;
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .form-group input:focus, .form-group select:focus { border-color: #9c27b0; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .btn-primary { background: #9c27b0; color: #fff; }
+    .btn-primary:hover { background: #7b1fa2; }
+    .btn-green { background: var(--green); color: #000; }
+    .btn-green:hover { background: var(--green2); }
+    .btn-sm { padding: 5px 12px; font-size: 0.75rem; }
+    .btn-danger { background: #f44336; color: #fff; }
+    .btn-danger:hover { background: #c62828; }
+    .btn-outline { background: transparent; border: 1px solid var(--border); color: var(--text2); }
+    .btn-outline:hover { border-color: var(--green); color: var(--green); }
+    .btn-full { width: 100%; justify-content: center; }
+
+    /* Tabs */
+    .admin-tabs {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+      flex-wrap: wrap;
+    }
+    .admin-tab {
+      padding: 10px 18px;
+      border: none;
+      background: none;
+      color: var(--text2);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s;
+      margin-bottom: -1px;
+    }
+    .admin-tab:hover { color: #ce93d8; }
+    .admin-tab.active { color: #ce93d8; border-bottom-color: #9c27b0; }
+
+    .admin-panel { display: none; }
+    .admin-panel.active { display: block; }
+
+    /* Group section */
+    .group-admin-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 20px;
+    }
+
+    .group-admin-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .group-admin-header {
+      background: linear-gradient(90deg, #1a0a2e, #2d1060);
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #9c27b0;
+    }
+
+    .group-admin-label { font-weight: 800; color: #ce93d8; }
+
+    .match-editor {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-bottom: 1px solid rgba(46,50,96,0.4);
+      font-size: 0.8rem;
+    }
+    .match-editor:last-child { border-bottom: none; }
+    .match-editor .teams { flex: 1; color: var(--text2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .score-input {
+      width: 44px;
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      color: var(--text);
+      padding: 4px 6px;
+      font-size: 0.85rem;
+      font-weight: 800;
+      text-align: center;
+      outline: none;
+    }
+    .score-input:focus { border-color: #9c27b0; }
+    .score-sep { color: var(--text3); font-size: 0.75rem; }
+
+    /* Knockout editor */
+    .round-section { margin-bottom: 32px; }
+    .round-title {
+      font-size: 1rem;
+      font-weight: 800;
+      color: #ce93d8;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #9c27b0;
+    }
+
+    .knockout-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      gap: 12px;
+    }
+
+    .knockout-editor {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .knockout-editor-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .team-input {
+      flex: 1;
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      color: var(--text);
+      padding: 5px 8px;
+      font-size: 0.8rem;
+      outline: none;
+    }
+    .team-input:focus { border-color: #9c27b0; }
+
+    /* Toast */
+    #toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: var(--green);
+      color: #000;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s;
+      z-index: 9999;
+    }
+    #toast.show { transform: translateY(0); opacity: 1; }
+    #toast.error { background: #f44336; color: #fff; }
+
+    /* Settings */
+    .settings-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      max-width: 500px;
+      margin-bottom: 20px;
+    }
+    .settings-card h3 { margin-bottom: 16px; font-size: 0.95rem; color: #ce93d8; }
+
+    .toggle-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .toggle-row:last-child { border-bottom: none; }
+    .toggle-label { font-size: 0.85rem; color: var(--text2); }
+
+    .toggle {
+      position: relative;
+      width: 44px;
+      height: 24px;
+    }
+    .toggle input { display: none; }
+    .toggle-slider {
+      position: absolute;
+      inset: 0;
+      background: var(--border);
+      border-radius: 24px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .toggle-slider::before {
+      content: '';
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      left: 3px;
+      top: 3px;
+      background: #fff;
+      border-radius: 50%;
+      transition: 0.3s;
+    }
+    .toggle input:checked + .toggle-slider { background: var(--green); }
+    .toggle input:checked + .toggle-slider::before { transform: translateX(20px); }
+  </style>
+</head>
+<body>
+
+<div class="admin-header">
+  <div>
+    <div class="admin-title">🔐 Admin Panel — FIFA Jahon Chempionati 2026</div>
+    <div class="admin-user" id="admin-user-label"></div>
+  </div>
+  <div style="display:flex;gap:10px;align-items:center">
+    <a href="/" class="btn btn-outline btn-sm">⚽ Saytga qaytish</a>
+    <button class="btn btn-danger btn-sm" onclick="logout()" id="logout-btn" style="display:none">Chiqish</button>
+  </div>
+</div>
+
+<!-- LOGIN -->
+<div id="login-screen">
+  <div class="login-box">
+    <h2>🔐 Admin Kirish</h2>
+    <p>Faqat admin hisobi bilan o'zgartirish mumkin</p>
+    <div class="form-group">
+      <label>Parol</label>
+      <input type="password" id="pw-input" placeholder="Parolni kiriting…" onkeydown="if(event.key==='Enter')doLogin()">
+    </div>
+    <button class="btn btn-primary btn-full" onclick="doLogin()">Kirish</button>
+    <p style="margin-top:14px;font-size:0.75rem;color:var(--text3);text-align:center">Standart parol: <code>admin123</code></p>
+  </div>
+</div>
+
+<!-- ADMIN CONTENT -->
+<div id="admin-content" style="display:none">
+  <div id="admin-main">
+    <div class="admin-tabs">
+      <button class="admin-tab active" onclick="switchPanel('groups')">⚽ Guruhlar</button>
+      <button class="admin-tab" onclick="switchPanel('knockout')">🏆 Knockout</button>
+      <button class="admin-tab" onclick="switchPanel('settings')">⚙️ Sozlamalar</button>
+    </div>
+
+    <!-- GROUPS PANEL -->
+    <div id="panel-groups" class="admin-panel active">
+      <p style="color:var(--text2);font-size:0.85rem;margin-bottom:16px">Natijani kiriting va saqlang. Jadval avtomatik hisoblanadi.</p>
+      <div id="group-admin-grid" class="group-admin-grid"></div>
+    </div>
+
+    <!-- KNOCKOUT PANEL -->
+    <div id="panel-knockout" class="admin-panel">
+      <p style="color:var(--text2);font-size:0.85rem;margin-bottom:16px">Har bir match uchun jamoa nomlarini va hisobni kiriting.</p>
+      <div id="knockout-admin"></div>
+    </div>
+
+    <!-- SETTINGS PANEL -->
+    <div id="panel-settings" class="admin-panel">
+      <div class="settings-card">
+        <h3>🌐 Onlayn API (football-data.org)</h3>
+        <div class="toggle-row">
+          <span class="toggle-label">API orqali avtomatik yangilanish</span>
+          <label class="toggle">
+            <input type="checkbox" id="use-api-toggle" onchange="saveApiSettings()">
+            <div class="toggle-slider"></div>
+          </label>
+        </div>
+        <div class="form-group" style="margin-top:14px">
+          <label>API Kalit (football-data.org)</label>
+          <input type="text" id="api-key-input" placeholder="Masalan: abc123xyz456…">
+        </div>
+        <button class="btn btn-green" onclick="saveApiSettings()">API Sozlamalarini Saqlash</button>
+        <p style="margin-top:10px;font-size:0.72rem;color:var(--text3)">
+          Bepul API kalit olish: <strong>football-data.org</strong> saytiga ro'yxatdan o'ting.<br>
+          Aktiv bo'lsa, ma'lumotlar har 5 daqiqada yangilanadi.
+        </p>
+      </div>
+
+      <div class="settings-card">
+        <h3>🔑 Parolni O'zgartirish</h3>
+        <div class="form-group">
+          <label>Yangi Parol (min. 6 belgi)</label>
+          <input type="password" id="new-pw" placeholder="Yangi parol…">
+        </div>
+        <div class="form-group">
+          <label>Tasdiqlash</label>
+          <input type="password" id="new-pw2" placeholder="Qayta kiriting…">
+        </div>
+        <button class="btn btn-primary" onclick="changePassword()">Parolni Yangilash</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<script src="/js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIFA Jahon Chempionati 2026 — Jadval va Bracket</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-title">
+    <span class="ball">⚽</span>
+    <div>
+      <h1>FIFA Jahon Chempionati 2026</h1>
+      <p>Guruhlar jadvali · Yakuniy bosqich daraxti</p>
+    </div>
+  </div>
+
+  <nav class="header-nav">
+    <button class="nav-btn active" onclick="showTab('groups')">Guruhlar</button>
+    <button class="nav-btn" onclick="showTab('bracket')">Bracket</button>
+  </nav>
+
+  <a href="/admin" class="admin-link">🔐 Admin</a>
+</header>
+
+<main>
+  <div id="last-updated"></div>
+
+  <!-- GROUPS TAB -->
+  <section id="groups-section" class="tab-section active">
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot" style="background:#00c853"></div> 1-o'rin (R32 ga o'tadi)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#4caf50"></div> 2-o'rin (R32 ga o'tadi)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#ff9800"></div> 3-o'rin (eng yaxshi 8 ta o'tishi mumkin)</div>
+    </div>
+    <div id="groups-grid" class="groups-grid">
+      <div class="loading"><div class="spinner"></div> Yuklanmoqda…</div>
+    </div>
+  </section>
+
+  <!-- BRACKET TAB -->
+  <section id="bracket-section" class="tab-section">
+    <div id="bracket-container">
+      <div class="loading"><div class="spinner"></div> Yuklanmoqda…</div>
+    </div>
+  </section>
+</main>
+
+<script src="/js/app.js"></script>
+</body>
+</html>
