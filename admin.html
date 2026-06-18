@@ -288,6 +288,39 @@
     </div>
   </div>
 
+  <!-- ═══ API Import kartasi ════════════════════════════════════════════════ -->
+  <div class="setup-card" style="border-color:#ff9800; margin-bottom:24px;">
+    <h2>📡 Onlayn Ma'lumot Yuklash</h2>
+    <div class="hint" style="margin-bottom:16px;">
+      O'ynab bo'lingan matchlar natijalarini avtomatik yuklaydi.
+      Bepul API kalit:
+      <a href="https://www.football-data.org/client/register" target="_blank" rel="noopener">football-data.org → Register</a>
+      (1 daqiqa, bepul). Yoki ESPN manbasidan kalitsiz urinib ko'ring.
+    </div>
+
+    <div style="display:flex;gap:12px;align-items:flex-end;flex-wrap:wrap;margin-bottom:12px;">
+      <div class="form-group" style="flex:1;min-width:220px;margin:0;">
+        <label>football-data.org API kalit (ixtiyoriy)</label>
+        <input type="password" id="fdorg-key" placeholder="Masalan: abc123def456…" autocomplete="off">
+      </div>
+      <div class="form-group" style="min-width:160px;margin:0;">
+        <label>Musobaqa kodi</label>
+        <input type="text" id="fdorg-comp" value="WC" placeholder="WC, PL, BL1…">
+      </div>
+    </div>
+
+    <div style="display:flex;gap:10px;flex-wrap:wrap;">
+      <button class="btn btn-gold" onclick="importFromFootballData()" title="football-data.org API">
+        📥 FD.org dan Yuklash
+      </button>
+      <button class="btn btn-outline" onclick="importFromESPN()" title="ESPN (kalitsiz, ixtiyoriy)">
+        📺 ESPN dan Yuklash
+      </button>
+    </div>
+
+    <div id="import-log" class="status-bar" style="margin-top:12px;display:none;white-space:pre-wrap;font-size:0.75rem;line-height:1.7;"></div>
+  </div>
+
   <!-- Asosiy admin bo'limlar -->
   <div id="admin-content" style="display:none">
     <div class="admin-tabs">

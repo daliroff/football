@@ -3,7 +3,8 @@ function showTab(name) {
   document.querySelectorAll('.tab-section').forEach(s => s.classList.remove('active'));
   document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
   document.getElementById(name + '-section').classList.add('active');
-  document.querySelectorAll('.nav-btn')[name === 'groups' ? 0 : 1].classList.add('active');
+  const idx = { groups: 0, bracket: 1, stats: 2 }[name] ?? 0;
+  document.querySelectorAll('.nav-btn')[idx].classList.add('active');
 }
 
 /* ─── Helpers ───────────────────────────────────────────────────────────────── */
@@ -194,6 +195,173 @@ function recalcGroup(group) {
   group.teams.sort((a,b)=>b.pts-a.pts||b.gd-a.gd||b.gf-a.gf||a.name.localeCompare(b.name));
 }
 
+/* ─── Statistika ────────────────────────────────────────────────────────────── */
+function renderStats(groups, knockout) {
+  const container = document.getElementById('stats-container');
+
+  // Barcha jamoalar ro'yxatini yasash
+  const allTeams = [];
+  groups.forEach(g => {
+    g.teams.forEach(t => {
+      if (t.played > 0) allTeams.push({ ...t, group: g.id, flag: t.flag || getFlag(t.name) });
+    });
+  });
+
+  if (allTeams.length === 0) {
+    container.innerHTML = `
+    <div style="text-align:center;padding:60px 20px;color:var(--text3)">
+      <div style="font-size:3rem;margin-bottom:12px">📊</div>
+      <div style="font-size:1rem">Hozircha o'ynalgan matchlar yo'q.</div>
+      <div style="font-size:0.82rem;margin-top:8px">Admin paneldan natijalar kiritilgach, statistika shu yerda chiqadi.</div>
+    </div>`;
+    return;
+  }
+
+  // Umumiy raqamlar
+  let totalGoals = 0, totalMatches = 0;
+  groups.forEach(g => {
+    g.matches.filter(m => m.played).forEach(m => {
+      totalGoals += m.homeScore + m.awayScore;
+      totalMatches++;
+    });
+  });
+  const avgGoals = totalMatches ? (totalGoals / totalMatches).toFixed(2) : 0;
+
+  // Knockout gollar
+  let koGoals = 0, koMatches = 0;
+  const koRounds = [
+    ...( knockout.round_of_32 || []),
+    ...( knockout.round_of_16 || []),
+    ...( knockout.quarter_finals || []),
+    ...( knockout.semi_finals || []),
+    ...(knockout.third_place ? [knockout.third_place] : []),
+    ...(knockout.final ? [knockout.final] : [])
+  ];
+  koRounds.filter(m => m.played).forEach(m => {
+    koGoals += (m.homeScore || 0) + (m.awayScore || 0);
+    koMatches++;
+  });
+
+  // TOP 10 gol jamoalar
+  const byGoals = [...allTeams].sort((a,b) => b.gf - a.gf || b.gd - a.gd || b.pts - a.pts).slice(0, 10);
+
+  // TOP 10 mudofaa (eng kam gol yegan, o'ynagan)
+  const byDef = [...allTeams].filter(t => t.played > 0).sort((a,b) => a.ga - b.ga || b.gd - a.gd || b.pts - a.pts).slice(0, 10);
+
+  // TOP 10 ochko
+  const byPts = [...allTeams].sort((a,b) => b.pts - a.pts || b.gd - a.gd || b.gf - a.gf).slice(0, 10);
+
+  // Barcha o'ynalgan matchlar
+  const allMatches = [];
+  groups.forEach(g => {
+    g.matches.filter(m => m.played).forEach(m => {
+      allMatches.push({ ...m, group: g.id });
+    });
+  });
+  // Ko'p gol bo'lgan matchlar (top 5)
+  const bigGames = [...allMatches]
+    .sort((a,b) => (b.homeScore+b.awayScore) - (a.homeScore+a.awayScore))
+    .slice(0, 5);
+
+  container.innerHTML = `
+  <!-- Umumiy raqamlar -->
+  <div class="stats-summary">
+    <div class="stat-box">
+      <div class="stat-num">${totalMatches + koMatches}</div>
+      <div class="stat-label">Jami o'yinlar</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">${totalGoals + koGoals}</div>
+      <div class="stat-label">Jami gollar</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">${avgGoals}</div>
+      <div class="stat-label">O'rtacha gol/o'yin (guruh)</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">${allTeams.length}</div>
+      <div class="stat-label">O'ynagan jamoalar</div>
+    </div>
+  </div>
+
+  <div class="stats-grid">
+
+    <!-- Top gol jamoalar -->
+    <div class="stats-card">
+      <div class="stats-card-title">⚽ Eng Ko'p Gol Urgan Jamoalar</div>
+      ${rankTable(byGoals, [
+        { key: t => t.gf,  label: 'Gol' },
+        { key: t => t.ga,  label: 'O\'tkazilgan' },
+        { key: t => t.gd > 0 ? '+'+t.gd : t.gd, label: 'Farq' },
+        { key: t => t.pts, label: 'Och' }
+      ])}
+    </div>
+
+    <!-- Top mudofaa -->
+    <div class="stats-card">
+      <div class="stats-card-title">🛡 Eng Kam Gol O'tkazgan Jamoalar</div>
+      ${rankTable(byDef, [
+        { key: t => t.ga,  label: 'O\'tkazilgan' },
+        { key: t => t.gf,  label: 'Gol' },
+        { key: t => t.played, label: 'O\'yin' },
+        { key: t => t.pts, label: 'Och' }
+      ])}
+    </div>
+
+    <!-- Top ochko -->
+    <div class="stats-card">
+      <div class="stats-card-title">🏅 Eng Ko'p Ochko</div>
+      ${rankTable(byPts, [
+        { key: t => t.pts, label: 'Ochko' },
+        { key: t => t.won, label: "G'alaba" },
+        { key: t => t.drawn, label: 'Durrang' },
+        { key: t => t.gf,  label: 'Gol' }
+      ])}
+    </div>
+
+    <!-- Gol to'lib ketgan o'yinlar -->
+    <div class="stats-card">
+      <div class="stats-card-title">🔥 Eng Ko'p Gollik O'yinlar</div>
+      <div class="big-games-list">
+        ${bigGames.map((m, i) => `
+        <div class="big-game-row">
+          <span class="big-game-rank">${i+1}</span>
+          <div class="big-game-match">
+            <span>${getFlag(m.home)} ${m.home}</span>
+            <span class="big-game-score">${m.homeScore} — ${m.awayScore}</span>
+            <span>${getFlag(m.away)} ${m.away}</span>
+          </div>
+          <span class="big-game-total">${m.homeScore+m.awayScore} gol · Guruh ${m.group}</span>
+        </div>`).join('')}
+      </div>
+    </div>
+
+  </div>`;
+}
+
+function rankTable(teams, cols) {
+  const rows = teams.map((t, i) => `
+  <tr>
+    <td class="rank-num">${i+1}</td>
+    <td><div class="team-name-cell">
+      <span class="pos-badge pos-${Math.min(i+1,4)}">${i+1}</span>
+      <span class="team-flag">${t.flag||'🏳'}</span>
+      <span>${t.name}</span>
+      <span style="font-size:0.7rem;color:var(--text3);margin-left:4px">G${t.group}</span>
+    </div></td>
+    ${cols.map(c => `<td style="text-align:center;font-weight:700;color:var(--gold)">${c.key(t)}</td>`).join('')}
+  </tr>`).join('');
+
+  const headers = cols.map(c => `<th>${c.label}</th>`).join('');
+
+  return `
+  <table class="standings-table" style="width:100%">
+    <thead><tr><th>#</th><th>Jamoa</th>${headers}</tr></thead>
+    <tbody>${rows}</tbody>
+  </table>`;
+}
+
+/* ─── Main ──────────────────────────────────────────────────────────────────── */
 async function load() {
   try {
     const res  = await fetch('data.json?t=' + Date.now());
@@ -201,6 +369,7 @@ async function load() {
     data.groups.forEach(recalcGroup);
     renderGroups(data.groups);
     renderBracket(data.knockout);
+    renderStats(data.groups, data.knockout);
     document.getElementById('last-updated').textContent =
       'Oxirgi yangilanish: ' + new Date().toLocaleString('uz-UZ');
   } catch (e) {

@@ -19,6 +19,7 @@
   <nav class="header-nav">
     <button class="nav-btn active" onclick="showTab('groups')">Guruhlar</button>
     <button class="nav-btn" onclick="showTab('bracket')">Bracket</button>
+    <button class="nav-btn" onclick="showTab('stats')">Statistika</button>
   </nav>
   <a href="admin.html" class="admin-link">🔐 Admin</a>
 </header>
@@ -39,6 +40,12 @@
 
   <section id="bracket-section" class="tab-section">
     <div id="bracket-container">
+      <div class="loading"><div class="spinner"></div> Yuklanmoqda…</div>
+    </div>
+  </section>
+
+  <section id="stats-section" class="tab-section">
+    <div id="stats-container">
       <div class="loading"><div class="spinner"></div> Yuklanmoqda…</div>
     </div>
   </section>
