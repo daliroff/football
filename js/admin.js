@@ -386,6 +386,20 @@ function importLog(lines, type = 'ok') {
 }
 
 /* ─── football-data.org ─────────────────────────────────────────────────────── */
+
+// CORS proxy — brauzerdan to'g'ridan-to'g'ri API ga so'rov bloklanadi
+async function fdFetch(url, apiKey) {
+  const opts = apiKey ? { headers: { 'X-Auth-Token': apiKey } } : {};
+  // 1. To'g'ridan-to'g'ri urinish
+  try {
+    const r = await fetch(url, opts);
+    if (r.ok || r.status === 401 || r.status === 403 || r.status === 404) return r;
+  } catch (_) { /* CORS xatosi — proxy ga o'tamiz */ }
+  // 2. CORS proxy orqali
+  const proxy = 'https://corsproxy.io/?' + encodeURIComponent(url);
+  return fetch(proxy, opts);
+}
+
 async function importFromFootballData() {
   const apiKey = (document.getElementById('fdorg-key').value || '').trim();
   const comp   = (document.getElementById('fdorg-comp').value || 'WC').trim();
@@ -397,12 +411,11 @@ async function importFromFootballData() {
 
   importLog('⏳ football-data.org dan yuklanmoqda…', 'warn');
 
-  const headers = { 'X-Auth-Token': apiKey };
-  const base    = 'https://api.football-data.org/v4';
+  const base = 'https://api.football-data.org/v4';
 
   try {
     // 1. Matchlarni yuklash
-    const mRes = await fetch(`${base}/competitions/${comp}/matches`, { headers });
+    const mRes = await fdFetch(`${base}/competitions/${comp}/matches`, apiKey);
     if (!mRes.ok) {
       const e = await mRes.json().catch(() => ({}));
       throw new Error(e.message || `HTTP ${mRes.status}`);
