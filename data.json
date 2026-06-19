@@ -11,27 +11,27 @@
       "id": "A",
       "teams": [
         {
-          "name": "South Korea",
-          "flag": "🇰🇷",
-          "played": 1,
-          "won": 1,
+          "name": "Mexico",
+          "flag": "🇲🇽",
+          "played": 2,
+          "won": 2,
           "drawn": 0,
           "lost": 0,
           "gf": 2,
-          "ga": 1,
-          "gd": 1,
-          "pts": 3
+          "ga": 0,
+          "gd": 2,
+          "pts": 6
         },
         {
-          "name": "Mexico",
-          "flag": "🇲🇽",
-          "played": 1,
+          "name": "South Korea",
+          "flag": "🇰🇷",
+          "played": 2,
           "won": 1,
           "drawn": 0,
-          "lost": 0,
-          "gf": 1,
-          "ga": 0,
-          "gd": 1,
+          "lost": 1,
+          "gf": 2,
+          "ga": 2,
+          "gd": 0,
           "pts": 3
         },
         {
@@ -83,12 +83,12 @@
         {
           "home": "Mexico",
           "away": "South Korea",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 1,
+          "awayScore": 0,
           "date": "2026-06-18",
           "time": "18:00",
           "venue": "Estadio Akron",
-          "played": false
+          "played": true
         },
         {
           "home": "South Africa",
