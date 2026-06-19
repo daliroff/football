@@ -128,26 +128,14 @@
         {
           "name": "Canada",
           "flag": "🇨🇦",
-          "played": 1,
-          "won": 1,
+          "played": 2,
+          "won": 2,
           "drawn": 0,
           "lost": 0,
-          "gf": 6,
+          "gf": 12,
           "ga": 0,
-          "gd": 6,
-          "pts": 3
-        },
-        {
-          "name": "Qatar",
-          "flag": "🇶🇦",
-          "played": 1,
-          "won": 0,
-          "drawn": 1,
-          "lost": 0,
-          "gf": 1,
-          "ga": 1,
-          "gd": 0,
-          "pts": 1
+          "gd": 12,
+          "pts": 6
         },
         {
           "name": "Switzerland",
@@ -159,6 +147,18 @@
           "gf": 1,
           "ga": 1,
           "gd": 0,
+          "pts": 1
+        },
+        {
+          "name": "Qatar",
+          "flag": "🇶🇦",
+          "played": 2,
+          "won": 0,
+          "drawn": 1,
+          "lost": 1,
+          "gf": 1,
+          "ga": 7,
+          "gd": -6,
           "pts": 1
         },
         {
@@ -198,12 +198,12 @@
         {
           "home": "Canada",
           "away": "Qatar",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 6,
+          "awayScore": 0,
           "date": "2026-06-19",
           "time": "15:00",
           "venue": "BC Place",
-          "played": false
+          "played": true
         },
         {
           "home": "Bosnia & Herzegovina",
