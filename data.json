@@ -140,14 +140,14 @@
         {
           "name": "Switzerland",
           "flag": "🇨🇭",
-          "played": 1,
-          "won": 0,
+          "played": 2,
+          "won": 1,
           "drawn": 1,
           "lost": 0,
-          "gf": 1,
-          "ga": 1,
-          "gd": 0,
-          "pts": 1
+          "gf": 5,
+          "ga": 2,
+          "gd": 3,
+          "pts": 4
         },
         {
           "name": "Qatar",
@@ -164,13 +164,13 @@
         {
           "name": "Bosnia & Herzegovina",
           "flag": "🇧🇦",
-          "played": 1,
+          "played": 2,
           "won": 0,
           "drawn": 0,
-          "lost": 1,
-          "gf": 0,
-          "ga": 6,
-          "gd": -6,
+          "lost": 2,
+          "gf": 1,
+          "ga": 10,
+          "gd": -9,
           "pts": 0
         }
       ],
@@ -208,12 +208,12 @@
         {
           "home": "Bosnia & Herzegovina",
           "away": "Switzerland",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 1,
+          "awayScore": 4,
           "date": "2026-06-19",
           "time": "18:00",
           "venue": "SoFi Stadium",
-          "played": false
+          "played": true
         },
         {
           "home": "Canada",
