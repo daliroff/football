@@ -243,49 +243,49 @@
         {
           "name": "Brazil",
           "flag": "🇧🇷",
-          "played": 1,
-          "won": 1,
+          "played": 2,
+          "won": 2,
           "drawn": 0,
           "lost": 0,
-          "gf": 3,
+          "gf": 6,
           "ga": 0,
-          "gd": 3,
-          "pts": 3
+          "gd": 6,
+          "pts": 6
         },
         {
           "name": "Scotland",
           "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
-          "played": 1,
+          "played": 2,
           "won": 1,
           "drawn": 0,
-          "lost": 0,
+          "lost": 1,
           "gf": 1,
-          "ga": 0,
-          "gd": 1,
+          "ga": 1,
+          "gd": 0,
+          "pts": 3
+        },
+        {
+          "name": "Morocco",
+          "flag": "🇲🇦",
+          "played": 2,
+          "won": 1,
+          "drawn": 0,
+          "lost": 1,
+          "gf": 1,
+          "ga": 3,
+          "gd": -2,
           "pts": 3
         },
         {
           "name": "Haiti",
           "flag": "🇭🇹",
-          "played": 1,
+          "played": 2,
           "won": 0,
           "drawn": 0,
-          "lost": 1,
+          "lost": 2,
           "gf": 0,
-          "ga": 1,
-          "gd": -1,
-          "pts": 0
-        },
-        {
-          "name": "Morocco",
-          "flag": "🇲🇦",
-          "played": 1,
-          "won": 0,
-          "drawn": 0,
-          "lost": 1,
-          "gf": 0,
-          "ga": 3,
-          "gd": -3,
+          "ga": 4,
+          "gd": -4,
           "pts": 0
         }
       ],
@@ -313,22 +313,22 @@
         {
           "home": "Brazil",
           "away": "Haiti",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 3,
+          "awayScore": 0,
           "date": "2026-06-19",
           "time": "21:00",
           "venue": "MetLife Stadium",
-          "played": false
+          "played": true
         },
         {
           "home": "Morocco",
           "away": "Scotland",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 1,
+          "awayScore": 0,
           "date": "2026-06-19",
           "time": "18:00",
           "venue": "Arrowhead Stadium",
-          "played": false
+          "played": true
         },
         {
           "home": "Brazil",
@@ -356,51 +356,51 @@
       "id": "D",
       "teams": [
         {
-          "name": "Australia",
-          "flag": "🇦🇺",
-          "played": 1,
-          "won": 1,
+          "name": "Paraguay",
+          "flag": "🇵🇾",
+          "played": 2,
+          "won": 2,
           "drawn": 0,
           "lost": 0,
           "gf": 2,
           "ga": 0,
           "gd": 2,
-          "pts": 3
-        },
-        {
-          "name": "Paraguay",
-          "flag": "🇵🇾",
-          "played": 1,
-          "won": 1,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 1,
-          "ga": 0,
-          "gd": 1,
-          "pts": 3
+          "pts": 6
         },
         {
           "name": "USA",
           "flag": "🇺🇸",
-          "played": 1,
-          "won": 0,
+          "played": 2,
+          "won": 1,
           "drawn": 0,
           "lost": 1,
-          "gf": 0,
+          "gf": 2,
           "ga": 1,
-          "gd": -1,
-          "pts": 0
+          "gd": 1,
+          "pts": 3
+        },
+        {
+          "name": "Australia",
+          "flag": "🇦🇺",
+          "played": 2,
+          "won": 1,
+          "drawn": 0,
+          "lost": 1,
+          "gf": 2,
+          "ga": 2,
+          "gd": 0,
+          "pts": 3
         },
         {
           "name": "Turkey",
           "flag": "🇹🇷",
-          "played": 1,
+          "played": 2,
           "won": 0,
           "drawn": 0,
-          "lost": 1,
+          "lost": 2,
           "gf": 0,
-          "ga": 2,
-          "gd": -2,
+          "ga": 3,
+          "gd": -3,
           "pts": 0
         }
       ],
@@ -428,22 +428,22 @@
         {
           "home": "USA",
           "away": "Australia",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 2,
+          "awayScore": 0,
           "date": "2026-06-19",
           "time": "21:00",
           "venue": "Lumen Field",
-          "played": false
+          "played": true
         },
         {
           "home": "Paraguay",
           "away": "Turkey",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 1,
+          "awayScore": 0,
           "date": "2026-06-19",
           "time": "15:00",
           "venue": "AT&T Stadium",
-          "played": false
+          "played": true
         },
         {
           "home": "USA",
