@@ -471,18 +471,6 @@
       "id": "E",
       "teams": [
         {
-          "name": "Germany",
-          "flag": "🇩🇪",
-          "played": 1,
-          "won": 1,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 7,
-          "ga": 1,
-          "gd": 6,
-          "pts": 3
-        },
-        {
           "name": "Ivory Coast",
           "flag": "🇨🇮",
           "played": 1,
@@ -495,6 +483,30 @@
           "pts": 3
         },
         {
+          "name": "Curaçao",
+          "flag": "🇨🇼",
+          "played": 1,
+          "won": 0,
+          "drawn": 1,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 1
+        },
+        {
+          "name": "Germany",
+          "flag": "🇩🇪",
+          "played": 1,
+          "won": 0,
+          "drawn": 1,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 1
+        },
+        {
           "name": "Ecuador",
           "flag": "🇪🇨",
           "played": 1,
@@ -505,26 +517,14 @@
           "ga": 1,
           "gd": -1,
           "pts": 0
-        },
-        {
-          "name": "Curaçao",
-          "flag": "🇨🇼",
-          "played": 1,
-          "won": 0,
-          "drawn": 0,
-          "lost": 1,
-          "gf": 1,
-          "ga": 7,
-          "gd": -6,
-          "pts": 0
         }
       ],
       "matches": [
         {
           "home": "Germany",
           "away": "Curaçao",
-          "homeScore": 7,
-          "awayScore": 1,
+          "homeScore": 0,
+          "awayScore": 0,
           "date": "2026-06-14",
           "time": "18:00",
           "venue": "MetLife Stadium",
@@ -586,6 +586,18 @@
       "id": "F",
       "teams": [
         {
+          "name": "Netherlands",
+          "flag": "🇳🇱",
+          "played": 1,
+          "won": 1,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 5,
+          "ga": 1,
+          "gd": 4,
+          "pts": 3
+        },
+        {
           "name": "Sweden",
           "flag": "🇸🇪",
           "played": 1,
@@ -602,24 +614,12 @@
           "flag": "🇯🇵",
           "played": 1,
           "won": 0,
-          "drawn": 1,
-          "lost": 0,
-          "gf": 2,
-          "ga": 2,
-          "gd": 0,
-          "pts": 1
-        },
-        {
-          "name": "Netherlands",
-          "flag": "🇳🇱",
-          "played": 1,
-          "won": 0,
-          "drawn": 1,
-          "lost": 0,
-          "gf": 2,
-          "ga": 2,
-          "gd": 0,
-          "pts": 1
+          "drawn": 0,
+          "lost": 1,
+          "gf": 1,
+          "ga": 5,
+          "gd": -4,
+          "pts": 0
         },
         {
           "name": "Tunisia",
@@ -638,8 +638,8 @@
         {
           "home": "Netherlands",
           "away": "Japan",
-          "homeScore": 2,
-          "awayScore": 2,
+          "homeScore": 5,
+          "awayScore": 1,
           "date": "2026-06-14",
           "time": "15:00",
           "venue": "SoFi Stadium",
