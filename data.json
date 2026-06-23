@@ -1161,6 +1161,18 @@
       "id": "K",
       "teams": [
         {
+          "name": "Portugal",
+          "flag": "🇵🇹",
+          "played": 2,
+          "won": 2,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 10,
+          "ga": 0,
+          "gd": 10,
+          "pts": 6
+        },
+        {
           "name": "Colombia",
           "flag": "🇨🇴",
           "played": 1,
@@ -1177,35 +1189,23 @@
           "flag": "🇨🇩",
           "played": 1,
           "won": 0,
-          "drawn": 1,
-          "lost": 0,
-          "gf": 1,
-          "ga": 1,
-          "gd": 0,
-          "pts": 1
-        },
-        {
-          "name": "Portugal",
-          "flag": "🇵🇹",
-          "played": 1,
-          "won": 0,
-          "drawn": 1,
-          "lost": 0,
-          "gf": 1,
-          "ga": 1,
-          "gd": 0,
-          "pts": 1
+          "drawn": 0,
+          "lost": 1,
+          "gf": 0,
+          "ga": 5,
+          "gd": -5,
+          "pts": 0
         },
         {
           "name": "Uzbekistan",
           "flag": "🇺🇿",
-          "played": 1,
+          "played": 2,
           "won": 0,
           "drawn": 0,
-          "lost": 1,
+          "lost": 2,
           "gf": 1,
-          "ga": 3,
-          "gd": -2,
+          "ga": 8,
+          "gd": -7,
           "pts": 0
         }
       ],
@@ -1213,8 +1213,8 @@
         {
           "home": "Portugal",
           "away": "DR Congo",
-          "homeScore": 1,
-          "awayScore": 1,
+          "homeScore": 5,
+          "awayScore": 0,
           "date": "2026-06-17",
           "time": "18:00",
           "venue": "Rose Bowl",
@@ -1233,12 +1233,12 @@
         {
           "home": "Portugal",
           "away": "Uzbekistan",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 5,
+          "awayScore": 0,
           "date": "2026-06-23",
           "time": "18:00",
           "venue": "MetLife Stadium",
-          "played": false
+          "played": true
         },
         {
           "home": "DR Congo",
