@@ -471,32 +471,32 @@
       "id": "E",
       "teams": [
         {
+          "name": "Germany",
+          "flag": "🇩🇪",
+          "played": 2,
+          "won": 1,
+          "drawn": 1,
+          "lost": 0,
+          "gf": 2,
+          "ga": 1,
+          "gd": 1,
+          "pts": 4
+        },
+        {
           "name": "Ivory Coast",
           "flag": "🇨🇮",
-          "played": 1,
+          "played": 2,
           "won": 1,
           "drawn": 0,
-          "lost": 0,
-          "gf": 1,
-          "ga": 0,
-          "gd": 1,
+          "lost": 1,
+          "gf": 2,
+          "ga": 2,
+          "gd": 0,
           "pts": 3
         },
         {
           "name": "Curaçao",
           "flag": "🇨🇼",
-          "played": 1,
-          "won": 0,
-          "drawn": 1,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 1
-        },
-        {
-          "name": "Germany",
-          "flag": "🇩🇪",
           "played": 1,
           "won": 0,
           "drawn": 1,
@@ -543,12 +543,12 @@
         {
           "home": "Germany",
           "away": "Ivory Coast",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 2,
+          "awayScore": 1,
           "date": "2026-06-20",
           "time": "18:00",
           "venue": "Levi's Stadium",
-          "played": false
+          "played": true
         },
         {
           "home": "Curaçao",
@@ -588,25 +588,25 @@
         {
           "name": "Netherlands",
           "flag": "🇳🇱",
-          "played": 1,
-          "won": 1,
+          "played": 2,
+          "won": 2,
           "drawn": 0,
           "lost": 0,
-          "gf": 5,
-          "ga": 1,
-          "gd": 4,
-          "pts": 3
+          "gf": 10,
+          "ga": 2,
+          "gd": 8,
+          "pts": 6
         },
         {
           "name": "Sweden",
           "flag": "🇸🇪",
-          "played": 1,
+          "played": 2,
           "won": 1,
           "drawn": 0,
-          "lost": 0,
-          "gf": 5,
-          "ga": 1,
-          "gd": 4,
+          "lost": 1,
+          "gf": 6,
+          "ga": 6,
+          "gd": 0,
           "pts": 3
         },
         {
@@ -658,12 +658,12 @@
         {
           "home": "Netherlands",
           "away": "Sweden",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 5,
+          "awayScore": 1,
           "date": "2026-06-20",
           "time": "15:00",
           "venue": "Arrowhead Stadium",
-          "played": false
+          "played": true
         },
         {
           "home": "Japan",
@@ -816,16 +816,16 @@
       "id": "H",
       "teams": [
         {
-          "name": "Saudi Arabia",
-          "flag": "🇸🇦",
-          "played": 1,
-          "won": 0,
+          "name": "Spain",
+          "flag": "🇪🇸",
+          "played": 2,
+          "won": 1,
           "drawn": 1,
           "lost": 0,
-          "gf": 1,
-          "ga": 1,
-          "gd": 0,
-          "pts": 1
+          "gf": 4,
+          "ga": 0,
+          "gd": 4,
+          "pts": 4
         },
         {
           "name": "Uruguay",
@@ -852,15 +852,15 @@
           "pts": 1
         },
         {
-          "name": "Spain",
-          "flag": "🇪🇸",
-          "played": 1,
+          "name": "Saudi Arabia",
+          "flag": "🇸🇦",
+          "played": 2,
           "won": 0,
           "drawn": 1,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
+          "lost": 1,
+          "gf": 1,
+          "ga": 5,
+          "gd": -4,
           "pts": 1
         }
       ],
@@ -888,12 +888,12 @@
         {
           "home": "Spain",
           "away": "Saudi Arabia",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 4,
+          "awayScore": 0,
           "date": "2026-06-21",
           "time": "15:00",
           "venue": "MetLife Stadium",
-          "played": false
+          "played": true
         },
         {
           "home": "Cape Verde",
@@ -933,49 +933,49 @@
         {
           "name": "Norway",
           "flag": "🇳🇴",
-          "played": 1,
-          "won": 1,
+          "played": 2,
+          "won": 2,
           "drawn": 0,
           "lost": 0,
-          "gf": 4,
-          "ga": 1,
-          "gd": 3,
-          "pts": 3
+          "gf": 7,
+          "ga": 3,
+          "gd": 4,
+          "pts": 6
         },
         {
           "name": "France",
           "flag": "🇫🇷",
-          "played": 1,
-          "won": 1,
+          "played": 2,
+          "won": 2,
           "drawn": 0,
           "lost": 0,
-          "gf": 3,
+          "gf": 6,
           "ga": 2,
-          "gd": 1,
-          "pts": 3
+          "gd": 4,
+          "pts": 6
         },
         {
           "name": "Senegal",
           "flag": "🇸🇳",
-          "played": 1,
+          "played": 2,
           "won": 0,
           "drawn": 0,
-          "lost": 1,
-          "gf": 2,
-          "ga": 3,
-          "gd": -1,
+          "lost": 2,
+          "gf": 4,
+          "ga": 6,
+          "gd": -2,
           "pts": 0
         },
         {
           "name": "Iraq",
           "flag": "🇮🇶",
-          "played": 1,
+          "played": 2,
           "won": 0,
           "drawn": 0,
-          "lost": 1,
+          "lost": 2,
           "gf": 1,
-          "ga": 4,
-          "gd": -3,
+          "ga": 7,
+          "gd": -6,
           "pts": 0
         }
       ],
@@ -1003,22 +1003,22 @@
         {
           "home": "France",
           "away": "Iraq",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 3,
+          "awayScore": 0,
           "date": "2026-06-22",
           "time": "18:00",
           "venue": "SoFi Stadium",
-          "played": false
+          "played": true
         },
         {
           "home": "Senegal",
           "away": "Norway",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 2,
+          "awayScore": 3,
           "date": "2026-06-22",
           "time": "21:00",
           "venue": "Hard Rock Stadium",
-          "played": false
+          "played": true
         },
         {
           "home": "France",
@@ -1046,15 +1046,15 @@
       "id": "J",
       "teams": [
         {
-          "name": "Austria",
-          "flag": "🇦🇹",
-          "played": 1,
+          "name": "Argentina",
+          "flag": "🇦🇷",
+          "played": 2,
           "won": 1,
           "drawn": 0,
-          "lost": 0,
+          "lost": 1,
           "gf": 3,
-          "ga": 1,
-          "gd": 2,
+          "ga": 2,
+          "gd": 1,
           "pts": 3
         },
         {
@@ -1070,16 +1070,16 @@
           "pts": 3
         },
         {
-          "name": "Argentina",
-          "flag": "🇦🇷",
-          "played": 1,
-          "won": 0,
+          "name": "Austria",
+          "flag": "🇦🇹",
+          "played": 2,
+          "won": 1,
           "drawn": 0,
           "lost": 1,
-          "gf": 1,
-          "ga": 2,
-          "gd": -1,
-          "pts": 0
+          "gf": 3,
+          "ga": 3,
+          "gd": 0,
+          "pts": 3
         },
         {
           "name": "Jordan",
@@ -1118,12 +1118,12 @@
         {
           "home": "Argentina",
           "away": "Austria",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 2,
+          "awayScore": 0,
           "date": "2026-06-22",
           "time": "15:00",
           "venue": "MetLife Stadium",
-          "played": false
+          "played": true
         },
         {
           "home": "Algeria",
