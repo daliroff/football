@@ -256,29 +256,29 @@
           "name": "Scotland",
           "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
           "played": 2,
-          "won": 1,
+          "won": 2,
           "drawn": 0,
-          "lost": 1,
-          "gf": 1,
-          "ga": 1,
-          "gd": 0,
-          "pts": 3
-        },
-        {
-          "name": "Morocco",
-          "flag": "🇲🇦",
-          "played": 2,
-          "won": 1,
-          "drawn": 0,
-          "lost": 1,
-          "gf": 1,
-          "ga": 3,
-          "gd": -2,
-          "pts": 3
+          "lost": 0,
+          "gf": 2,
+          "ga": 0,
+          "gd": 2,
+          "pts": 6
         },
         {
           "name": "Haiti",
           "flag": "🇭🇹",
+          "played": 2,
+          "won": 0,
+          "drawn": 0,
+          "lost": 2,
+          "gf": 0,
+          "ga": 4,
+          "gd": -4,
+          "pts": 0
+        },
+        {
+          "name": "Morocco",
+          "flag": "🇲🇦",
           "played": 2,
           "won": 0,
           "drawn": 0,
@@ -323,8 +323,8 @@
         {
           "home": "Morocco",
           "away": "Scotland",
-          "homeScore": 1,
-          "awayScore": 0,
+          "homeScore": 0,
+          "awayScore": 1,
           "date": "2026-06-19",
           "time": "18:00",
           "venue": "Arrowhead Stadium",
@@ -497,26 +497,26 @@
         {
           "name": "Curaçao",
           "flag": "🇨🇼",
-          "played": 1,
+          "played": 2,
           "won": 0,
-          "drawn": 1,
+          "drawn": 2,
           "lost": 0,
           "gf": 0,
           "ga": 0,
           "gd": 0,
-          "pts": 1
+          "pts": 2
         },
         {
           "name": "Ecuador",
           "flag": "🇪🇨",
-          "played": 1,
+          "played": 2,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 1,
           "gf": 0,
           "ga": 1,
           "gd": -1,
-          "pts": 0
+          "pts": 1
         }
       ],
       "matches": [
@@ -553,12 +553,12 @@
         {
           "home": "Curaçao",
           "away": "Ecuador",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 0,
+          "awayScore": 0,
           "date": "2026-06-20",
           "time": "21:00",
           "venue": "Rose Bowl",
-          "played": false
+          "played": true
         },
         {
           "home": "Germany",
@@ -586,14 +586,14 @@
       "id": "F",
       "teams": [
         {
-          "name": "Netherlands",
-          "flag": "🇳🇱",
+          "name": "Japan",
+          "flag": "🇯🇵",
           "played": 2,
           "won": 2,
           "drawn": 0,
           "lost": 0,
-          "gf": 10,
-          "ga": 2,
+          "gf": 8,
+          "ga": 0,
           "gd": 8,
           "pts": 6
         },
@@ -610,27 +610,27 @@
           "pts": 3
         },
         {
-          "name": "Japan",
-          "flag": "🇯🇵",
-          "played": 1,
-          "won": 0,
+          "name": "Netherlands",
+          "flag": "🇳🇱",
+          "played": 2,
+          "won": 1,
           "drawn": 0,
           "lost": 1,
-          "gf": 1,
+          "gf": 5,
           "ga": 5,
-          "gd": -4,
-          "pts": 0
+          "gd": 0,
+          "pts": 3
         },
         {
           "name": "Tunisia",
           "flag": "🇹🇳",
-          "played": 1,
+          "played": 2,
           "won": 0,
           "drawn": 0,
-          "lost": 1,
+          "lost": 2,
           "gf": 1,
-          "ga": 5,
-          "gd": -4,
+          "ga": 9,
+          "gd": -8,
           "pts": 0
         }
       ],
@@ -638,8 +638,8 @@
         {
           "home": "Netherlands",
           "away": "Japan",
-          "homeScore": 5,
-          "awayScore": 1,
+          "homeScore": 0,
+          "awayScore": 4,
           "date": "2026-06-14",
           "time": "15:00",
           "venue": "SoFi Stadium",
@@ -668,12 +668,12 @@
         {
           "home": "Japan",
           "away": "Tunisia",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 4,
+          "awayScore": 0,
           "date": "2026-06-20",
           "time": "18:00",
           "venue": "Gillette Stadium",
-          "played": false
+          "played": true
         },
         {
           "home": "Netherlands",
@@ -701,51 +701,51 @@
       "id": "G",
       "teams": [
         {
+          "name": "Egypt",
+          "flag": "🇪🇬",
+          "played": 2,
+          "won": 2,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 6,
+          "ga": 2,
+          "gd": 4,
+          "pts": 6
+        },
+        {
           "name": "Iran",
           "flag": "🇮🇷",
-          "played": 1,
+          "played": 2,
           "won": 0,
-          "drawn": 1,
+          "drawn": 2,
           "lost": 0,
           "gf": 2,
           "ga": 2,
           "gd": 0,
-          "pts": 1
+          "pts": 2
         },
         {
           "name": "New Zealand",
           "flag": "🇳🇿",
-          "played": 1,
+          "played": 2,
           "won": 0,
           "drawn": 1,
-          "lost": 0,
-          "gf": 2,
-          "ga": 2,
-          "gd": 0,
+          "lost": 1,
+          "gf": 3,
+          "ga": 5,
+          "gd": -2,
           "pts": 1
         },
         {
           "name": "Belgium",
           "flag": "🇧🇪",
-          "played": 1,
+          "played": 2,
           "won": 0,
           "drawn": 1,
-          "lost": 0,
+          "lost": 1,
           "gf": 1,
-          "ga": 1,
-          "gd": 0,
-          "pts": 1
-        },
-        {
-          "name": "Egypt",
-          "flag": "🇪🇬",
-          "played": 1,
-          "won": 0,
-          "drawn": 1,
-          "lost": 0,
-          "gf": 1,
-          "ga": 1,
-          "gd": 0,
+          "ga": 3,
+          "gd": -2,
           "pts": 1
         }
       ],
@@ -754,7 +754,7 @@
           "home": "Belgium",
           "away": "Egypt",
           "homeScore": 1,
-          "awayScore": 1,
+          "awayScore": 3,
           "date": "2026-06-15",
           "time": "18:00",
           "venue": "MetLife Stadium",
@@ -773,22 +773,22 @@
         {
           "home": "Belgium",
           "away": "Iran",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 0,
+          "awayScore": 0,
           "date": "2026-06-21",
           "time": "18:00",
           "venue": "Lincoln Financial Field",
-          "played": false
+          "played": true
         },
         {
           "home": "Egypt",
           "away": "New Zealand",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 3,
+          "awayScore": 1,
           "date": "2026-06-21",
           "time": "21:00",
           "venue": "Lumen Field",
-          "played": false
+          "played": true
         },
         {
           "home": "Belgium",
@@ -822,34 +822,34 @@
           "won": 1,
           "drawn": 1,
           "lost": 0,
-          "gf": 4,
-          "ga": 0,
+          "gf": 6,
+          "ga": 2,
           "gd": 4,
           "pts": 4
         },
         {
-          "name": "Uruguay",
-          "flag": "🇺🇾",
-          "played": 1,
-          "won": 0,
-          "drawn": 1,
-          "lost": 0,
-          "gf": 1,
-          "ga": 1,
-          "gd": 0,
-          "pts": 1
-        },
-        {
           "name": "Cape Verde",
           "flag": "🇨🇻",
-          "played": 1,
+          "played": 2,
           "won": 0,
-          "drawn": 1,
+          "drawn": 2,
           "lost": 0,
-          "gf": 0,
-          "ga": 0,
+          "gf": 4,
+          "ga": 4,
           "gd": 0,
-          "pts": 1
+          "pts": 2
+        },
+        {
+          "name": "Uruguay",
+          "flag": "🇺🇾",
+          "played": 2,
+          "won": 0,
+          "drawn": 2,
+          "lost": 0,
+          "gf": 3,
+          "ga": 3,
+          "gd": 0,
+          "pts": 2
         },
         {
           "name": "Saudi Arabia",
@@ -868,8 +868,8 @@
         {
           "home": "Spain",
           "away": "Cape Verde",
-          "homeScore": 0,
-          "awayScore": 0,
+          "homeScore": 2,
+          "awayScore": 2,
           "date": "2026-06-15",
           "time": "15:00",
           "venue": "Rose Bowl",
@@ -898,12 +898,12 @@
         {
           "home": "Cape Verde",
           "away": "Uruguay",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 2,
+          "awayScore": 2,
           "date": "2026-06-21",
           "time": "18:00",
           "venue": "AT&T Stadium",
-          "played": false
+          "played": true
         },
         {
           "home": "Spain",
@@ -1046,6 +1046,18 @@
       "id": "J",
       "teams": [
         {
+          "name": "Algeria",
+          "flag": "🇩🇿",
+          "played": 2,
+          "won": 2,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 4,
+          "ga": 2,
+          "gd": 2,
+          "pts": 6
+        },
+        {
           "name": "Argentina",
           "flag": "🇦🇷",
           "played": 2,
@@ -1054,18 +1066,6 @@
           "lost": 1,
           "gf": 3,
           "ga": 2,
-          "gd": 1,
-          "pts": 3
-        },
-        {
-          "name": "Algeria",
-          "flag": "🇩🇿",
-          "played": 1,
-          "won": 1,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 2,
-          "ga": 1,
           "gd": 1,
           "pts": 3
         },
@@ -1084,13 +1084,13 @@
         {
           "name": "Jordan",
           "flag": "🇯🇴",
-          "played": 1,
+          "played": 2,
           "won": 0,
           "drawn": 0,
-          "lost": 1,
-          "gf": 1,
-          "ga": 3,
-          "gd": -2,
+          "lost": 2,
+          "gf": 2,
+          "ga": 5,
+          "gd": -3,
           "pts": 0
         }
       ],
@@ -1128,12 +1128,12 @@
         {
           "home": "Algeria",
           "away": "Jordan",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 2,
+          "awayScore": 1,
           "date": "2026-06-22",
           "time": "15:00",
           "venue": "Gillette Stadium",
-          "played": false
+          "played": true
         },
         {
           "home": "Argentina",
