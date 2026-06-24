@@ -1175,25 +1175,25 @@
         {
           "name": "Colombia",
           "flag": "🇨🇴",
-          "played": 1,
-          "won": 1,
+          "played": 2,
+          "won": 2,
           "drawn": 0,
           "lost": 0,
-          "gf": 3,
+          "gf": 4,
           "ga": 1,
-          "gd": 2,
-          "pts": 3
+          "gd": 3,
+          "pts": 6
         },
         {
           "name": "DR Congo",
           "flag": "🇨🇩",
-          "played": 1,
+          "played": 2,
           "won": 0,
           "drawn": 0,
-          "lost": 1,
+          "lost": 2,
           "gf": 0,
-          "ga": 5,
-          "gd": -5,
+          "ga": 6,
+          "gd": -6,
           "pts": 0
         },
         {
@@ -1243,12 +1243,12 @@
         {
           "home": "DR Congo",
           "away": "Colombia",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 0,
+          "awayScore": 1,
           "date": "2026-06-23",
           "time": "21:00",
           "venue": "BC Place",
-          "played": false
+          "played": true
         },
         {
           "home": "Portugal",
@@ -1278,49 +1278,49 @@
         {
           "name": "Croatia",
           "flag": "🇭🇷",
-          "played": 1,
-          "won": 1,
+          "played": 2,
+          "won": 2,
           "drawn": 0,
           "lost": 0,
-          "gf": 1,
+          "gf": 2,
           "ga": 0,
-          "gd": 1,
-          "pts": 3
+          "gd": 2,
+          "pts": 6
         },
         {
           "name": "Ghana",
           "flag": "🇬🇭",
-          "played": 1,
+          "played": 2,
           "won": 1,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
           "gf": 1,
           "ga": 0,
           "gd": 1,
-          "pts": 3
+          "pts": 4
         },
         {
           "name": "England",
           "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-          "played": 1,
+          "played": 2,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 1,
           "gf": 0,
           "ga": 1,
           "gd": -1,
-          "pts": 0
+          "pts": 1
         },
         {
           "name": "Panama",
           "flag": "🇵🇦",
-          "played": 1,
+          "played": 2,
           "won": 0,
           "drawn": 0,
-          "lost": 1,
+          "lost": 2,
           "gf": 0,
-          "ga": 1,
-          "gd": -1,
+          "ga": 2,
+          "gd": -2,
           "pts": 0
         }
       ],
@@ -1348,22 +1348,22 @@
         {
           "home": "England",
           "away": "Ghana",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 0,
+          "awayScore": 0,
           "date": "2026-06-23",
           "time": "15:00",
           "venue": "Lumen Field",
-          "played": false
+          "played": true
         },
         {
           "home": "Croatia",
           "away": "Panama",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 1,
+          "awayScore": 0,
           "date": "2026-06-23",
           "time": "18:00",
           "venue": "Gillette Stadium",
-          "played": false
+          "played": true
         },
         {
           "home": "England",
