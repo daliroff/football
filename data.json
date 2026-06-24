@@ -1276,15 +1276,15 @@
       "id": "L",
       "teams": [
         {
-          "name": "England",
-          "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+          "name": "Croatia",
+          "flag": "🇭🇷",
           "played": 1,
           "won": 1,
           "drawn": 0,
           "lost": 0,
-          "gf": 4,
-          "ga": 2,
-          "gd": 2,
+          "gf": 1,
+          "ga": 0,
+          "gd": 1,
           "pts": 3
         },
         {
@@ -1300,8 +1300,8 @@
           "pts": 3
         },
         {
-          "name": "Panama",
-          "flag": "🇵🇦",
+          "name": "England",
+          "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
           "played": 1,
           "won": 0,
           "drawn": 0,
@@ -1312,15 +1312,15 @@
           "pts": 0
         },
         {
-          "name": "Croatia",
-          "flag": "🇭🇷",
+          "name": "Panama",
+          "flag": "🇵🇦",
           "played": 1,
           "won": 0,
           "drawn": 0,
           "lost": 1,
-          "gf": 2,
-          "ga": 4,
-          "gd": -2,
+          "gf": 0,
+          "ga": 1,
+          "gd": -1,
           "pts": 0
         }
       ],
@@ -1328,8 +1328,8 @@
         {
           "home": "England",
           "away": "Croatia",
-          "homeScore": 4,
-          "awayScore": 2,
+          "homeScore": 0,
+          "awayScore": 1,
           "date": "2026-06-17",
           "time": "15:00",
           "venue": "MetLife Stadium",
