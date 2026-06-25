@@ -132,9 +132,9 @@
           "won": 2,
           "drawn": 0,
           "lost": 0,
-          "gf": 12,
-          "ga": 0,
-          "gd": 12,
+          "gf": 9,
+          "ga": 1,
+          "gd": 8,
           "pts": 6
         },
         {
@@ -156,9 +156,9 @@
           "won": 0,
           "drawn": 1,
           "lost": 1,
-          "gf": 1,
-          "ga": 7,
-          "gd": -6,
+          "gf": 2,
+          "ga": 4,
+          "gd": -2,
           "pts": 1
         },
         {
@@ -198,8 +198,8 @@
         {
           "home": "Canada",
           "away": "Qatar",
-          "homeScore": 6,
-          "awayScore": 0,
+          "homeScore": 3,
+          "awayScore": 1,
           "date": "2026-06-19",
           "time": "15:00",
           "venue": "BC Place",
@@ -253,28 +253,28 @@
           "pts": 6
         },
         {
-          "name": "Scotland",
-          "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
-          "played": 2,
-          "won": 2,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 2,
-          "ga": 0,
-          "gd": 2,
-          "pts": 6
-        },
-        {
           "name": "Haiti",
           "flag": "🇭🇹",
           "played": 2,
-          "won": 0,
+          "won": 1,
           "drawn": 0,
-          "lost": 2,
-          "gf": 0,
-          "ga": 4,
-          "gd": -4,
-          "pts": 0
+          "lost": 1,
+          "gf": 3,
+          "ga": 3,
+          "gd": 0,
+          "pts": 3
+        },
+        {
+          "name": "Scotland",
+          "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+          "played": 2,
+          "won": 1,
+          "drawn": 0,
+          "lost": 1,
+          "gf": 1,
+          "ga": 3,
+          "gd": -2,
+          "pts": 3
         },
         {
           "name": "Morocco",
@@ -303,8 +303,8 @@
         {
           "home": "Scotland",
           "away": "Haiti",
-          "homeScore": 1,
-          "awayScore": 0,
+          "homeScore": 0,
+          "awayScore": 3,
           "date": "2026-06-13",
           "time": "21:00",
           "venue": "Hard Rock Stadium",
@@ -471,28 +471,16 @@
       "id": "E",
       "teams": [
         {
-          "name": "Germany",
-          "flag": "🇩🇪",
-          "played": 2,
-          "won": 1,
-          "drawn": 1,
-          "lost": 0,
-          "gf": 2,
-          "ga": 1,
-          "gd": 1,
-          "pts": 4
-        },
-        {
           "name": "Ivory Coast",
           "flag": "🇨🇮",
           "played": 2,
-          "won": 1,
+          "won": 2,
           "drawn": 0,
-          "lost": 1,
-          "gf": 2,
-          "ga": 2,
-          "gd": 0,
-          "pts": 3
+          "lost": 0,
+          "gf": 3,
+          "ga": 0,
+          "gd": 3,
+          "pts": 6
         },
         {
           "name": "Curaçao",
@@ -516,6 +504,18 @@
           "gf": 0,
           "ga": 1,
           "gd": -1,
+          "pts": 1
+        },
+        {
+          "name": "Germany",
+          "flag": "🇩🇪",
+          "played": 2,
+          "won": 0,
+          "drawn": 1,
+          "lost": 1,
+          "gf": 0,
+          "ga": 2,
+          "gd": -2,
           "pts": 1
         }
       ],
@@ -543,8 +543,8 @@
         {
           "home": "Germany",
           "away": "Ivory Coast",
-          "homeScore": 2,
-          "awayScore": 1,
+          "homeScore": 0,
+          "awayScore": 2,
           "date": "2026-06-20",
           "time": "18:00",
           "venue": "Levi's Stadium",
